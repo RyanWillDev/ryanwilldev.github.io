@@ -1,0 +1,53 @@
+@import 'variables';
+
+a {
+  font-family: $web-font-main;
+}
+
+.float-left {
+  float: left;
+  padding-right: 16px;
+}
+
+.float-right {
+  float: right;
+  padding-left: 15px;
+}
+
+nav {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+}
+
+.nav-links {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+
+  margin: 0 auto;
+}
+
+.float {
+  & > a {
+    font-size: 1.25em;
+
+    padding: 5px;
+
+    & > i {
+      color: $font-color-main;
+      font-size: 1em;
+    }
+  }
+}
+
+@media screen and (max-width: 50em) {
+  .web-nav {
+    display: none;
+  }
+}
