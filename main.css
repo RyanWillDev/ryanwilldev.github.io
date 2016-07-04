@@ -1,0 +1,219 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);.social-links {
+  background-color: #d1d7df;
+  bottom: 0;
+  height: 40px;
+  position: fixed;
+  margin: 0 auto;
+  width: 100%; }
+
+.social-icons {
+  align-items: center;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 80%; }
+  .social-icons > li {
+    list-style-type: none; }
+  .social-icons > li > a {
+    text-decoration: none; }
+
+.fa {
+  color: #01090A;
+  font-size: 1.5em; }
+html, body {
+  background: #01090A;
+  color: #d1d7df;
+  font-family: "Lato";
+  height: 100%;
+  margin: 0;
+  width: 100%; }
+
+#root {
+  width: 100%; }
+
+ul {
+  padding: 0; }
+
+a {
+  color: #d1d7df;
+  text-decoration: none; }
+main {
+  text-align: left;
+  margin: 0 auto;
+  width: 100%; }
+a {
+  font-family: "Lato"; }
+
+.float-left {
+  float: left;
+  padding-right: 16px; }
+
+.float-right {
+  float: right;
+  padding-left: 15px; }
+
+nav {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%; }
+
+.nav-links {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto; }
+
+.float > a {
+  font-size: 1.25em;
+  padding: 5px; }
+  .float > a > i {
+    color: #d1d7df;
+    font-size: 1em; }
+
+@media screen and (max-width: 50em) {
+  .web-nav {
+    display: none; } }
+.about-container {
+  text-align: left; }
+
+.about-desc-container {
+  margin: 16% auto 0;
+  width: 70%; }
+
+.about-description {
+  text-indent: 1.25em;
+  font-size: 1.25em;
+  word-spacing: 0.115em;
+  padding: 0 56px 0;
+  margin: 0; }
+
+.emphasis {
+  font-weight: bold;
+  font-size: 1.55em; }
+form input, form textarea, #submit {
+  border-radius: 5px; }
+
+#contact-title {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 88px; }
+  @media screen and (max-width: 360px) {
+    #contact-title {
+      font-size: 1.5em;
+      margin-bottom: 12px; } }
+
+#contact-cta {
+  font-size: 1.25em;
+  text-align: center;
+  padding: 0 16px 16px; }
+  @media screen and (max-width: 360px) {
+    #contact-cta {
+      font-size: 1em;
+      margin-bottom: 8px; } }
+
+.form-container {
+  margin: 0 auto;
+  width: 80%; }
+  @media screen and (min-width: 800px) {
+    .form-container {
+      width: 50%; } }
+
+form {
+  height: 40vh;
+  text-align: center; }
+  form input {
+    border: none;
+    font-size: 0.8em;
+    padding: 8px; }
+    @media screen and (min-width: 800px) {
+      form input {
+        text-align: center; } }
+  form textarea {
+    border: none; }
+
+#contact-info {
+  margin: 0 auto 7%;
+  width: 100%; }
+  @media screen and (min-width: 935px) {
+    #contact-info {
+      margin-bottom: 3%; } }
+
+#name, #replyto {
+  width: 40%; }
+
+#name {
+  margin-right: 8px; }
+
+#subject {
+  background-color: #d1d7df;
+  color: #01090A;
+  margin-left: 8px;
+  margin-top: 8px; }
+
+#message {
+  display: block;
+  margin: 5% auto 5%;
+  height: 70%;
+  width: 100%; }
+  @media screen and (min-width: 600px) {
+    #message {
+      margin-bottom: 3%; } }
+  @media screen and (min-width: 1000px) {
+    #message {
+      max-width: 85%; } }
+
+#submit {
+  background-color: #d1d7df;
+  height: 40px;
+  width: 80px; }
+  #submit:hover {
+    cursor: pointer; }
+.projects-title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 48px;
+  padding-top: 72px;
+  text-transform: uppercase; }
+
+#featured-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 80%;
+  margin: 0 auto; }
+
+.featured-project {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-right: 5px;
+  position: relative; }
+  .featured-project:hover .project-desc {
+    background-color: rgba(0, 0, 0, 0.65);
+    opacity: 1; }
+  .featured-project a img {
+    border-radius: 5px; }
+
+.project-desc {
+  box-sizing: border-box;
+  color: #d1d7df;
+  font-size: 1.25em;
+  height: 228px;
+  opacity: 0;
+  padding: 5px;
+  position: absolute;
+  text-align: center;
+  transition: opacity 0.5s linear, background-color 0.2s linear;
+  bottom: 0;
+  width: 384px; }
+
+/*# sourceMappingURL=main.css.map*/

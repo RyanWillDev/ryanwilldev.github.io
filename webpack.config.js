@@ -15,7 +15,7 @@ module.exports = {
   // The name of bundled file
     filename: 'app.js',
   // The directory it will be written to
-    path: __dirname + '/dist',
+    path: __dirname,
   },
   devtool: 'source-map',
   resolve: {
