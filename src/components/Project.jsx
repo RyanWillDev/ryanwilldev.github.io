@@ -1,13 +1,5 @@
 import React from 'react';
 
-// class Project extends React.Component {
-//   constructor() {
-//     super();
-//   }
-
-// }
-
-
 const Project = (props) => {
   const { siteLink, imgLink, imgAlt, title, desc } = props;
   return (
