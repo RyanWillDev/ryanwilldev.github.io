@@ -40,9 +40,11 @@
   color: #b8b7ad;
   padding: 0.8em;
   top: 0%; }
+  .bm-item-list:first-child {
+    padding-top: 72px; }
   .bm-item-list > a {
     font-size: 1.5em;
-    padding-bottom: 16px; }
+    padding-bottom: 56px; }
 
 /* Styling of overlay */
 .bm-overlay {
@@ -137,8 +139,9 @@ nav {
   text-align: left; }
 
 .about-desc-container {
-  margin: 16% auto 0;
-  width: 70%; }
+  margin: auto 0;
+  width: 70%;
+  padding: 16%; }
   @media screen and (max-width: 640px) {
     .about-desc-container {
       font-size: 0.80em;
