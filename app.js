@@ -40319,7 +40319,7 @@
 	              { className: 'emphasis' },
 	              'Ryan Will'
 	            ),
-	            ', an aspiring Web Developer from the the Nashville area. A natural and determined problem solver, I enjoy solving new challenges, and I am constantly looking to fill the gaps in my knowledge of any topic. Feel free to look through my projects and reach out if you want to work together.'
+	            ', a Web Developer from the the Nashville area. A natural and determined problem solver, I enjoy solving new challenges, and I am constantly looking to fill the gaps in my knowledge of any topic.'
 	          )
 	        ),
 	        _react2.default.createElement(_Nav2.default, { left: 'Projects', right: 'Contact' })
@@ -40537,7 +40537,7 @@
 	              'div',
 	              { id: 'contact-info' },
 	              _react2.default.createElement('input', { id: 'name', type: 'text', name: 'name', placeholder: 'Who are you?', required: true }),
-	              _react2.default.createElement('input', { id: 'replyto', type: 'text', name: '_replyto',
+	              _react2.default.createElement('input', { id: 'replyto', type: 'email', name: '_replyto',
 	                placeholder: 'What\'s your email?', required: true
 	              })
 	            ),
