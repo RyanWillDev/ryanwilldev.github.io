@@ -17,7 +17,7 @@ class Contact extends React.Component {
           <form action="https://formspree.io/hello@ryanwilldev.com" method="POST">
             <div id="contact-info">
               <input id="name" type="text" name="name" placeholder="Who are you?" required/>
-              <input id="replyto" type="text" name="_replyto"
+              <input id="replyto" type="email" name="_replyto"
                 placeholder="What's your email?" required
               />
             </div>
