@@ -1,9 +1,3 @@
-<template>
-  <ul class="lg-only">
-    <li v-for="icon in icons"><a :href="icon.href"><i :class="icon.className"></i></a></li>
-  </ul>
-</template>
-
 <script type="text/javascript">
   export default {
     name: 'SocialIcons',
@@ -15,6 +9,12 @@
     },
   };
 </script>
+
+<template>
+  <ul class="lg-only">
+    <li v-for="icon in icons"><a :href="icon.href"><i :class="icon.className"></i></a></li>
+  </ul>
+</template>
 
 <style scoped type="text/css">
   ul {

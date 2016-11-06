@@ -1,13 +1,3 @@
-<template>
-  <div class="nav-container">
-     <h2>RyanWill<span id="callout">Dev</span></h2>
-    <nav>
-      <nav-links :links="navbarLinks"></nav-links>
-      <social-icons :icons="socialIcons"></social-icons>
-    </nav>
-  </div>
-</template>
-
 <script type="text/javascript">
   import NavLinks from './NavLinks';
   import SocialIcons from './SocialIcons';
@@ -21,7 +11,7 @@
     data() {
       return {
         navbarLinks: [
-          { href: '/', name: 'About' },
+          { href: '/about', name: 'About' },
           { href: '/projects', name: 'Projects' },
           { href: '/blog', name: 'Blog' },
         ],
@@ -34,6 +24,16 @@
     },
   };
 </script>
+
+<template>
+  <div class="nav-container">
+     <h2>RyanWill<span id="callout">Dev</span></h2>
+    <nav>
+      <nav-links :links="navbarLinks"></nav-links>
+      <social-icons :icons="socialIcons"></social-icons>
+    </nav>
+  </div>
+</template>
 
 <style type="text/css">
   .nav-container {
@@ -109,4 +109,10 @@
       padding: 10px 0 0 0;
     }
   }
+
+  @media screen and (orientation: landscape) and (max-width: 1000px) {
+    .nav-container {
+      height: 15%;
+    }
+  };
 </style>

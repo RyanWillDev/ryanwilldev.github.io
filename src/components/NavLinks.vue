@@ -1,20 +1,22 @@
+<script type="text/javascript">
+export default {
+  name: 'NavLinks',
+  props: {
+    links: {
+      type: Array,
+      required: true,
+    },
+  },
+};
+</script>
+
 <template>
     <ul>
-      <li v-for="link in links"><a :href="link.href">{{link.name}}</a></li>
+      <li v-for="link in links">
+        <router-link :to="link.href">{{link.name}}</router-link>
+      </li>
     </ul>
 </template>
-
-<script type="text/javascript">
-  export default {
-    name: 'NavLinks',
-    props: {
-      links: {
-        type: Array,
-        required: true,
-      },
-    },
-  };
-</script>
 
 <style scoped type="text/css">
   ul {
