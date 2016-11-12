@@ -1,6 +1,6 @@
 <script type="text/javascript">
   export default {
-    name: 'BlogPostList',
+    name: 'JournalEntries',
   };
 </script>
 

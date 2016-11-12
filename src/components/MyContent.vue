@@ -16,7 +16,7 @@
     color: #313233;
     font-size: 1.10em;
     line-height: 1.25;
-    margin-right: 20px;
+    margin: 4% 20px 0 0;
     padding: 10px;
     width: 70%;
   }
@@ -32,6 +32,18 @@
   @media screen and (max-width: 600px) {
     .my-content-container {
       margin: 120px 0 0 0;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .my-content-container {
+      margin: 90px 0 0 0;
+    }
+  }
+
+  @media screen and (orientation: landscape) and (max-width: 1000px) {
+    .my-content-container {
+      margin-top: 60px;
     }
   }
 </style>

@@ -1,5 +1,5 @@
 <template>
-<div id="app">
+<div id="app-container">
   <navbar></navbar>
   <my-content></my-content>
 </div>
@@ -27,7 +27,7 @@ body, html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#app {
+#app-container {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;

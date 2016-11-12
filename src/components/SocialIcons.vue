@@ -18,7 +18,7 @@
 
 <style scoped type="text/css">
   ul {
-    bottom: 30px;
+    bottom: 50px;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -39,9 +39,14 @@
     padding: 5px;
   }
 
+  i:active {
+    color: #42b4d6;
+  }
+
+
   i {
     color: #bcbcbc;
-    font-size: 1.5em;
+    font-size: 1.75em;
   }
 
   @media screen and (max-width: 1000px) {

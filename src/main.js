@@ -4,7 +4,7 @@ import VueRouter from 'vue-router';
 import App from './App';
 import About from './components/About';
 import Projects from './components/Projects';
-import BlogPostList from './components/BlogPostList';
+import JournalEntries from './components/JournalEntries';
 
 Vue.use(VueRouter);
 
@@ -15,7 +15,7 @@ const routes = [
       { path: '', component: About },
       { path: '/about', component: About },
       { path: '/projects', component: Projects },
-      { path: '/blog', component: BlogPostList },
+      { path: '/journal', component: JournalEntries },
     ],
   },
   // Any unmatched route redirects to About

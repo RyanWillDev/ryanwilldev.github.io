@@ -32,7 +32,7 @@ export default {
   a {
     font-size: 1.75em;
     margin: 0 10px 0;
-    padding: 5px;
+    padding: 5px 5px 0 5px;
   }
 
   a, a:visited {
@@ -42,7 +42,16 @@ export default {
   }
 
   a:hover {
-    text-decoration: underline;
+    border-bottom: 2px solid #bcbcbc;
+  }
+
+  a:active {
+    border-bottom: 2px solid #42b4d6;
+    color: #42b4d6;
+  }
+
+  a.router-link-active {
+    border-bottom: 2px solid #42b4d6;
   }
 
   @media screen and (max-width: 1200px) {

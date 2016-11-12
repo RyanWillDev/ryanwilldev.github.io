@@ -13,7 +13,7 @@
         navbarLinks: [
           { href: '/about', name: 'About' },
           { href: '/projects', name: 'Projects' },
-          { href: '/blog', name: 'Blog' },
+          { href: '/journal', name: 'Journal' },
         ],
         socialIcons: [
           { href: 'https://twitter.com/ryanwilldev', className: 'fa fa-twitter' },
@@ -22,12 +22,22 @@
         ],
       };
     },
+    computed: {
+      callOutText() {
+        if (this.$route.path.indexOf('journal') === 1) {
+          return 'Write';
+        } else if (this.$route.path.indexOf('about') === 1) {
+          return 'Dev';
+        }
+        return 'Build';
+      },
+    },
   };
 </script>
 
 <template>
   <div class="nav-container">
-     <h2>RyanWill<span id="callout">Dev</span></h2>
+     <h2>RyanWill<span id="callout">{{callOutText}}</span></h2>
     <nav>
       <nav-links :links="navbarLinks"></nav-links>
       <social-icons :icons="socialIcons"></social-icons>
@@ -35,7 +45,7 @@
   </div>
 </template>
 
-<style type="text/css">
+<style type="text/css" scoped>
   .nav-container {
     background-color: #313233;
     /*-webkit-box-shadow: 3px 0 3px #ccc;
