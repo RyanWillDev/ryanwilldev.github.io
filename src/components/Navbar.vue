@@ -11,7 +11,7 @@
     data() {
       return {
         navbarLinks: [
-          { href: '/about', name: 'About' },
+          { href: '/', name: 'About' },
           { href: '/projects', name: 'Projects' },
           { href: '/journal', name: 'Journal' },
         ],
@@ -26,10 +26,10 @@
       callOutText() {
         if (this.$route.path.indexOf('journal') === 1) {
           return 'Write';
-        } else if (this.$route.path.indexOf('about') === 1) {
-          return 'Dev';
+        } else if (this.$route.path.indexOf('projects') === 1) {
+          return 'Build';
         }
-        return 'Build';
+        return 'Dev';
       },
     },
   };

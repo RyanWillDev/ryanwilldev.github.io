@@ -13,7 +13,7 @@ export default {
 <template>
     <ul>
       <li v-for="link in links">
-        <router-link :to="link.href">{{link.name}}</router-link>
+        <router-link :to="link.href" exact>{{link.name}}</router-link>
       </li>
     </ul>
 </template>
@@ -35,20 +35,6 @@ export default {
     padding: 5px 5px 0 5px;
   }
 
-  a, a:visited {
-    color: #bcbcbc;
-    list-style: none;
-    text-decoration: none;
-  }
-
-  a:hover {
-    border-bottom: 2px solid #bcbcbc;
-  }
-
-  a:active {
-    border-bottom: 2px solid #42b4d6;
-    color: #42b4d6;
-  }
 
   a.router-link-active {
     border-bottom: 2px solid #42b4d6;

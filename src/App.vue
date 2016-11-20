@@ -27,6 +27,21 @@ body, html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a, a:visited {
+  color: #bcbcbc;
+  list-style: none;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 2px solid #bcbcbc;
+}
+
+a:active {
+  border-bottom: 2px solid #42b4d6;
+  color: #42b4d6;
+}
+
 #app-container {
   display: -webkit-flex;
   display: -moz-flex;
