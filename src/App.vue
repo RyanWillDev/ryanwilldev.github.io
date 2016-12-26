@@ -51,4 +51,14 @@ a:active {
   flex-direction: column;
   height: 100%;
 }
+
+.section-head {
+    margin: 5% 0;
+  }
+
+@media screen and (max-width: 500px) {
+  .section-head {
+    text-align: center;
+  }
+}
 </style>
