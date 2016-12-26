@@ -13,7 +13,7 @@ export default {
 <template>
     <ul>
       <li v-for="link in links">
-        <router-link :to="link.href" exact>{{link.name}}</router-link>
+        <router-link :to="link.href">{{link.name}}</router-link>
       </li>
     </ul>
 </template>
@@ -46,7 +46,7 @@ export default {
     }
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1100px) {
     ul {
       align-items: center;
       flex-direction: row;

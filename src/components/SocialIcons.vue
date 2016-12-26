@@ -49,7 +49,7 @@
     font-size: 1.75em;
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1100px) {
     .lg-only {
       display: none;
     }

@@ -11,7 +11,7 @@
     data() {
       return {
         navbarLinks: [
-          { href: '/', name: 'About' },
+          { href: '/about', name: 'About' },
           { href: '/projects', name: 'Projects' },
           { href: '/journal', name: 'Journal' },
         ],
@@ -51,6 +51,7 @@
     /*-webkit-box-shadow: 3px 0 3px #ccc;
     box-shadow: 3px 0 3px  #ccc;*/
     height: 100%;
+    padding-bottom: 10px;
     position: fixed;
     top: 0;
     text-align: center;
@@ -72,17 +73,12 @@
     color: #42b4d6;
   }
   
-  /*@media screen and (max-width: 1200px) {
-    h2 {
-      font-size: 2em;
-    }
-  }*/
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1100px) {
     .nav-container {
       align-items: center;
       display: flex;
-      height: 10%;
+      height: 8%;
       width: 100%;
     }
 
@@ -96,6 +92,15 @@
     h2 {
       margin-right: auto;
       padding: 10px 0 10px 10px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .nav-container {
+      align-items: center;
+      display: flex;
+      height: 10%;
+      width: 100%;
     }
   }
 
@@ -122,7 +127,7 @@
 
   @media screen and (orientation: landscape) and (max-width: 1000px) {
     .nav-container {
-      height: 15%;
+      padding: 10px 0;
     }
   };
 </style>

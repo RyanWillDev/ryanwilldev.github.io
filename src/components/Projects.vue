@@ -5,5 +5,5 @@
 </script>
 
 <template>
-  <h1>Projects</h1>
+  <h1 class="section-head">Projects</h1>
 </template>
