@@ -6,9 +6,7 @@
 
   function highlightCode() {
     const code = document.querySelectorAll('code');
-    console.log(code);
     code.forEach((block) => {
-      console.log(block);
       hljs.highlightBlock(block);
     });
   }
@@ -27,12 +25,11 @@
 </script>
 
 <template>
-<div>
-  <h1>{{ entry.data.title }}</h1>
+<div class="entry-container">
   <div v-html="entry.html"></div>
 </div>
 </template>
 
-<style type="text/css">
+<style lang="scss" scoped>
   
 </style>

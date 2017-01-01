@@ -23,4 +23,31 @@
   </section>
 </template>
 
-<style type="text/css"></style>
+<style lang="scss" scoped>
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 32px 0;
+    }
+  } 
+
+  h3 {
+    color: #313233;
+    margin: 0;
+  }
+
+  a {
+    color: #313233;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  p {
+    margin-top: 8px;
+  }
+</style>
