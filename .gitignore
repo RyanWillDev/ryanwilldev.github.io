@@ -3,3 +3,4 @@ node_modules/
 dist/
 npm-debug.log
 vue.md
+./src/journal/journal.json
