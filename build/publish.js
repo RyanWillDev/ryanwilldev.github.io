@@ -3,13 +3,14 @@ const showdown = require('showdown');
 // showdown.setOption('noHeaderId', true);
 
 const converter = new showdown.Converter();
-const path = '../src/journal/';
+const path = '/Users/ryan/Projects/ryanwilldev.github.io/src/journal/';
 const entriesPath = `${path}journal_entries/`;
 
 const entries = fs.readdirSync(entriesPath);
 
 const journal = entries.reduce((prev, dir) => {
   const entry = {};
+
   fs.readdirSync(entriesPath + dir)
   .forEach((file) => {
     if (file.includes('json')) {
