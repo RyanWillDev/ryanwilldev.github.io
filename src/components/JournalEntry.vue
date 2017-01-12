@@ -30,6 +30,13 @@
 </div>
 </template>
 
-<style lang="scss" scoped>
-  
+<style lang="scss">
+  .entry-container {
+    pre {
+      code.javascript {
+      border-radius: 5px;
+      width: 90%;
+      }
+    }
+  } 
 </style>
