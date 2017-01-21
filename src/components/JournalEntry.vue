@@ -1,5 +1,4 @@
 <script type="text/javascript">
-/*eslint-disable*/
   import hljs from 'highlight.js';
 
   import journal from '../journal/journal.json';
@@ -20,7 +19,7 @@
     },
     mounted() {
       highlightCode();
-    }
+    },
   };
 </script>
 
@@ -35,6 +34,7 @@
     pre {
       code.javascript {
       border-radius: 5px;
+      margin: 24px 0;
       width: 90%;
       }
     }
