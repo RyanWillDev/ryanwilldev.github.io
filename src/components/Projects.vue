@@ -20,39 +20,6 @@
           </div>
         </div>
       </li>
-      <li class="project-list-item">
-        <div class="project">
-          <a href="http://ryanwilldev.com/brew-rank/#/">
-            <div class="project-img"></div>
-          </a>
-          <div class="project-info">
-            <h2 class="project-title">BrewRank</h2>
-            <p class="project-desc">An app for brew pubs to track the user ratings of their brews.</p>
-          </div>
-        </div>
-      </li>
-            <li class="project-list-item">
-        <div class="project">
-          <a href="http://ryanwilldev.com/brew-rank/#/">
-            <div class="project-img"></div>
-          </a>
-          <div class="project-info">
-            <h2 class="project-title">BrewRank</h2>
-            <p class="project-desc">An app for brew pubs to track the user ratings of their brews.</p>
-          </div>
-        </div>
-      </li>
-            <li class="project-list-item">
-        <div class="project">
-          <a href="http://ryanwilldev.com/brew-rank/#/">
-            <div class="project-img"></div>
-          </a>
-          <div class="project-info">
-            <h2 class="project-title">BrewRank</h2>
-            <p class="project-desc">An app for brew pubs to track the user ratings of their brews.</p>
-          </div>
-        </div>
-      </li>
     </ul>
   </section>
 </template>
