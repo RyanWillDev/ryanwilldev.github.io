@@ -4,7 +4,7 @@
   import journal from '../journal/journal.json';
 
   function highlightCode() {
-    const code = document.querySelectorAll('code');
+    const code = document.querySelectorAll('code'); // eslint-disable-line
     code.forEach((block) => {
       hljs.highlightBlock(block);
     });
