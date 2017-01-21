@@ -56,6 +56,7 @@
     top: 0;
     text-align: center;
     width: 24%;
+    z-index: 1;
   
     a, a:visited {
       color: #bcbcbc;
