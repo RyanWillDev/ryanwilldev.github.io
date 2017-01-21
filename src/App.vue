@@ -38,8 +38,16 @@ body, html {
 }
 
 .section-head {
-    margin: 5% 0;
-  }
+  margin: 5% 0;
+}
+
+ul, li{
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
 
 @media screen and (max-width: 500px) {
   .section-head {
