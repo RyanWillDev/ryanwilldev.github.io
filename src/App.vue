@@ -54,4 +54,10 @@ li {
     text-align: center;
   }
 }
+
+@media screen and (max-width: 1100px) {
+  .lg-only {
+    display: none;
+  }
+}
 </style>
