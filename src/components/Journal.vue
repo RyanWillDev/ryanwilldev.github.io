@@ -35,7 +35,7 @@
     <h1 class="section-head">Journal</h1>
     <div class="lg-only">
       <label for="sort">Sort Entries by Keyword:</label>
-      <input v-model="keywords" id="sort" type="text" placeholder="Enter a keyword">
+      <input v-model="keywords" id="sort" type="text" placeholder="Enter some keywords">
     </div>
     <ul>
       <li v-for="entry in filteredEntries">
