@@ -1,16 +1,30 @@
 <script type="text/javascript">
-  import journal from '../journal/journal.json';
-
+  
   export default {
     name: 'Journal',
     data() {
       return {
-        journal,
+        selectedTag: '',
       };
+    },
+    props: {
+      journal: Array,
     },
     methods: {
       capitalize(tag) {
         return tag.split(' ').map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
+      },
+
+      updateSelectedTag(tag) {
+        this.selectedTag = tag;
+      },
+
+      filteredEntries() {
+        if (this.selectedTag.length) {
+          return this.journal.filter(entry => entry.data.tags.includes(this.selectedTag));
+        }
+
+        return this.journal;
       },
     },
   };
@@ -19,12 +33,13 @@
 <template>
   <section>
     <h1 class="section-head">Journal</h1>
+    <span class="clear-btn" v-show="selectedTag" @click="updateSelectedTag('')">See All Entries</span>
     <ul>
-      <li v-for="entry in journal">
+      <li v-for="entry in filteredEntries()">
         <router-link :to="entry.data.url" append><h3>{{entry.data.title}}</h3></router-link>
         <p>{{entry.data.description}}</p>
         <div class="tags">
-          <span v-for="tag in entry.data.tags" class="tag">{{capitalize(tag)}}</span>
+          <span class="tag" v-for="tag in entry.data.tags" @click="updateSelectedTag(tag)">{{capitalize(tag)}}</span>
         </div>
       </li>
     </ul>
@@ -59,12 +74,24 @@
     margin-top: 8px;
   }
 
-  .tag {
+  .clear-btn {
+    width: 15%;
+    align-self: flex-end;
+    text-align: center;
+  }
+
+  .clear-btn, .tag {
     background-color: #bcbcbc;
     border-radius: 5px;
+    cursor: pointer;
     font-size: .8em;
     font-weight: bold;
     margin-right: 8px;
     padding: 5px;
+
+    &:hover {
+      padding: 8px;
+      text-decoration: underline;
+    }
   }
 </style>
