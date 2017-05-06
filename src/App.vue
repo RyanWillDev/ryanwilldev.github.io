@@ -1,16 +1,22 @@
 <template>
 <div id="app-container">
   <navbar></navbar>
-  <my-content></my-content>
+  <my-content :journal="journal"></my-content>
 </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar';
 import MyContent from './components/MyContent';
+import journal from './journal/journal.json';
 
 export default {
   name: 'app',
+  data() {
+    return {
+      journal,
+    };
+  },
   components: {
     Navbar,
     MyContent,
