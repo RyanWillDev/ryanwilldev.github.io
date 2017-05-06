@@ -1,12 +1,25 @@
 <script type="text/javascript">
+  import { resetDescriptions } from '../tools/updateDescriptions';
+
   export default {
     name: 'MyContent',
+    props: {
+      journal: Array,
+    },
+    watch: {
+      $route: (unusedNewRoute, oldRoute) => {
+        if (oldRoute.path.includes('journal')
+            && Object.keys(oldRoute.params).length) {
+          resetDescriptions();
+        }
+      },
+    },
   };
 </script>
 
 <template>
   <div class="my-content-container">
-    <router-view></router-view>
+    <router-view :journal="this.journal"></router-view>
   </div>
 </template>
 
