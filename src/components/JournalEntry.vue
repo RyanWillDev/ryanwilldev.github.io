@@ -2,6 +2,7 @@
   import hljs from 'highlight.js';
 
   import journal from '../journal/journal.json';
+  import { setMetaDescriptions } from '../tools/updateDescriptions';
 
   function highlightCode() {
     const code = document.querySelectorAll('code'); // eslint-disable-line
@@ -16,6 +17,9 @@
       return {
         entry: journal.find(curr => curr.data.url === this.$route.params.entryUrl),
       };
+    },
+    beforeMount() {
+      setMetaDescriptions(this.entry.data.description);
     },
     mounted() {
       highlightCode();
@@ -38,5 +42,5 @@
       width: 90%;
       }
     }
-  } 
+  }
 </style>
