@@ -26,10 +26,11 @@ const routes = [
 
 const router = new VueRouter({
   routes,
+  hashbang: false,
+  mode: 'history',
 });
 
 /* eslint-disable no-new */
 new Vue({
   router,
 }).$mount('#app');
-
