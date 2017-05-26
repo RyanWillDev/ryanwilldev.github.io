@@ -1,5 +1,4 @@
 <script type="text/javascript">
-  
   export default {
     name: 'Journal',
     data() {
@@ -55,7 +54,7 @@
     li {
       margin: 32px 0;
     }
-  } 
+  }
 
   h3 {
     color: #313233;
@@ -69,7 +68,7 @@
       text-decoration: underline;
     }
   }
-  
+
   p {
     margin-top: 8px;
   }
