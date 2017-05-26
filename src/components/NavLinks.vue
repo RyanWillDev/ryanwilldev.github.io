@@ -31,6 +31,7 @@ export default {
 
   a {
     font-size: 1.75em;
+    font-weight: normal;
     margin: 0 10px 0;
     padding: 5px 5px 0 5px;
   }
