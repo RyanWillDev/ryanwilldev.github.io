@@ -35,6 +35,14 @@
 
 <style lang="scss">
   .entry-container {
+    h1, h2, h3 {
+      margin-bottom: 24px;
+    }
+
+    h2, h3 {
+      margin-top: 56px;
+    }
+
     pre {
       code.javascript {
       border-radius: 5px;
