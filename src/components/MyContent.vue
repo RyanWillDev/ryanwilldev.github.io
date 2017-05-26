@@ -34,6 +34,11 @@
     width: 70%;
   }
 
+  a {
+      color: #42b4d6;
+      font-weight: bold;
+    }
+
   @media screen and (max-width: 1100px) {
     .my-content-container {
       align-self: center;
