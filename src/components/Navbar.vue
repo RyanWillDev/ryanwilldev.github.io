@@ -36,20 +36,18 @@
 </script>
 
 <template>
-  <div class="nav-container">
+  <aside class="nav-container">
      <h2>RyanWill<span id="callout">{{callOutText}}</span></h2>
     <nav>
       <nav-links :links="navbarLinks"></nav-links>
       <social-icons :icons="socialIcons"></social-icons>
     </nav>
-  </div>
+  </aside>
 </template>
 
 <style lang="scss">
   .nav-container {
     background-color: #313233;
-    /*-webkit-box-shadow: 3px 0 3px #ccc;
-    box-shadow: 3px 0 3px  #ccc;*/
     height: 100%;
     padding-bottom: 10px;
     position: fixed;
@@ -57,7 +55,7 @@
     text-align: center;
     width: 24%;
     z-index: 1;
-  
+
     a, a:visited {
       color: #bcbcbc;
       list-style: none;
@@ -137,5 +135,5 @@
       padding: 10px 0;
     }
   }
-  
+
 </style>
