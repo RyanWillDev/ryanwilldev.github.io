@@ -28,9 +28,11 @@
 </script>
 
 <template>
-<div class="entry-container">
-  <div v-html="entry.html"></div>
-</div>
+<section class="entry-container">
+  
+  <section v-html="entry.html"></section>
+
+</section>
 </template>
 
 <style lang="scss">
