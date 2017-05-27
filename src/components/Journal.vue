@@ -73,6 +73,17 @@
     margin-top: 8px;
   }
 
+  .tags {
+    @media screen and (max-width: 500px) {
+      display: flex;
+      flex-wrap: wrap;
+
+      .tag {
+        margin-top: 8px;
+      }
+    }
+  }
+
   .clear-btn {
     width: 15%;
     align-self: flex-end;
