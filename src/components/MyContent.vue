@@ -29,7 +29,7 @@
     color: #313233;
     font-size: 1.10em;
     line-height: 1.25;
-    margin: 4% 20px 0 0;
+    margin: 4% 3% 0 0;
     padding: 10px;
     width: 70%;
   }
@@ -42,21 +42,20 @@
   @media screen and (max-width: 1100px) {
     .my-content-container {
       align-self: center;
+      margin-top: 10%;
       width: 90%;
-      margin: 90px 0 0 0;
     }
   }
 
   @media screen and (max-width: 600px) {
     .my-content-container {
-      margin: 120px 0 0 0;
+      margin-top: 40%;
     }
   }
 
   @media screen and (max-width: 400px) {
     .my-content-container {
       font-size: .95em;
-      margin: 90px 0 0 0;
     }
   }
 
