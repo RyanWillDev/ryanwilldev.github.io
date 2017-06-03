@@ -29,7 +29,7 @@
 
 <template>
 <section class="entry-container">
-  
+
   <section v-html="entry.html"></section>
 
 </section>
@@ -51,6 +51,10 @@
       margin: 24px 0;
       width: 90%;
       }
+    }
+
+    @media screen and (min-width: 750px) {
+      padding: 0 10%;
     }
   }
 </style>
