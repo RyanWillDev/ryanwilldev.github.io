@@ -3,7 +3,7 @@ const showdown = require('showdown');
 // showdown.setOption('noHeaderId', true);
 
 const converter = new showdown.Converter();
-const path = '/Users/ryan/Projects/ryanwilldev.github.io/src/journal/';
+const path = '/Users/ryan/Projects/personal/ryanwilldev.github.io/src/journal/';
 const entriesPath = `${path}journal_entries/`;
 
 const entries = fs.readdirSync(entriesPath);
