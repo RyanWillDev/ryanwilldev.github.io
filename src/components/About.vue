@@ -7,10 +7,10 @@
 <template>
   <section class="about-container">
     <h1 class="section-head">Who is Ryan Will?</h1>
-    <p>I am a passionate and motivated self taught web developer from Middle Tennessee. I currently work at <a target="_blank" href="https://metova.com">Metova</a>
+    <p>I am a passionate and motivated self taught software developer from Middle Tennessee. I currently work at <a target="_blank" href="https://metova.com">Metova</a>
       and specialize in making rich and interactive web applications using modern techniques and technologies.
     </p>
-    
+
     <p>I am proficient with JavaScript, and have experience with popular frameworks and libraries such as Node, React, Redux, Vue, and Angular.
       I am currently working on expanding my knowledge of computer science in general to become a better software engineer.
       You can check out some of my work <a href="https://github.com/ryanwilldev">here</a>.
