@@ -1,4 +1,3 @@
-# Hello World
 
 Like most developers' personal sites, this has been my playground and has gone through many rewrites.
 I wanted an excuse to try out [Vue](https://vuejs.org/), so I decided to rewrite this site from React.

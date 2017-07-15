@@ -35,7 +35,10 @@
     <span class="clear-btn" v-show="selectedTag" @click="updateSelectedTag('')">See All Entries</span>
     <ul>
       <li v-for="entry in filteredEntries()">
-        <router-link :to="entry.data.url" append><h3>{{entry.data.title}}</h3></router-link>
+        <router-link :to="entry.data.url" append>
+          <h3>{{entry.data.title}}</h3>
+          <span class="pub-date">{{entry.data.publicationDate}}</span>
+        </router-link>
         <p>{{entry.data.description}}</p>
         <div class="tags">
           <span class="tag" v-for="tag in entry.data.tags" @click="updateSelectedTag(tag)">{{capitalize(tag)}}</span>
@@ -58,14 +61,18 @@
 
   h3 {
     color: #313233;
-    margin: 0;
+    display: inline-block;
+    margin: 0 0 8px;
   }
 
   a {
     color: #313233;
     text-decoration: none;
+
     &:hover {
-      text-decoration: underline;
+      & h3 {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -103,5 +110,11 @@
       padding: 8px;
       text-decoration: underline;
     }
+  }
+
+  .pub-date {
+    color: lighten(#313233, 30%);
+    font-size: .85em;
+    margin-top: 8px;
   }
 </style>

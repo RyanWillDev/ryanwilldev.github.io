@@ -29,7 +29,8 @@
 
 <template>
 <section class="entry-container">
-
+  <h1>{{entry.data.title}}</h1>
+  <span class="pub-date">{{entry.data.publicationDate}}</span>
   <section v-html="entry.html"></section>
 
 </section>
@@ -37,11 +38,12 @@
 
 <style lang="scss">
   .entry-container {
-    h1, h2, h3 {
-      margin-bottom: 24px;
+    h1 {
+      margin-bottom: .20em;
     }
 
     h2, h3 {
+      margin-bottom: 24px;
       margin-top: 56px;
     }
 
@@ -50,6 +52,15 @@
       border-radius: 5px;
       margin: 24px 0;
       width: 90%;
+      }
+    }
+
+    .pub-date {
+      display: block;
+      margin-bottom: 24px;
+
+      @media screen and (min-width: 750px) {
+        margin-bottom: 48px;
       }
     }
 

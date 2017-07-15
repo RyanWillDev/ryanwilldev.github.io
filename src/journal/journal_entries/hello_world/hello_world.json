@@ -2,5 +2,6 @@
   "title": "Hello World",
   "url": "hello-world",
   "description": "The first entry in my journal gives a brief rundown of the technologies used to build this site.",
-  "tags": ["vue", "showdownjs", "highlightjs", "node", "JavaScript"]
+  "tags": ["vue", "showdownjs", "highlightjs", "node", "JavaScript"],
+  "publicationDate": "June 3, 2017"
 }
