@@ -48,7 +48,7 @@
     }
 
     pre {
-      code.javascript {
+      code {
       border-radius: 5px;
       margin: 24px 0;
       width: 90%;
@@ -62,6 +62,12 @@
       @media screen and (min-width: 750px) {
         margin-bottom: 48px;
       }
+    }
+
+    .hljs-keyword {
+      border-radius: 5px;
+      display: inline-flex;
+      padding: 2px 4px;
     }
 
     @media screen and (min-width: 750px) {
