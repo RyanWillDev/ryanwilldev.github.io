@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const projectRoot = '/Users/ryan/Projects/ryanwilldev.github.io/';
+const projectRoot = '/Users/ryan/Projects/personal/ryanwilldev.github.io/';
 const cnameFile = `${projectRoot}/CNAME`;
 const distDirCNAME = `${projectRoot}/dist/CNAME`
 
