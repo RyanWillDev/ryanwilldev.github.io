@@ -1,4 +1,6 @@
 <script type="text/javascript">
+  import journal from '../../src/journal/journal.json';
+
   export default {
     name: 'Journal',
     data() {
@@ -20,10 +22,10 @@
 
       filteredEntries() {
         if (this.selectedTag.length) {
-          return this.journal.filter(entry => entry.data.tags.includes(this.selectedTag));
+          return journal.filter(entry => entry.data.tags.includes(this.selectedTag));
         }
 
-        return this.journal;
+        return journal;
       },
     },
   };
@@ -62,7 +64,7 @@
   h3 {
     color: #313233;
     display: inline-block;
-    margin: 0 0 8px;
+    margin: 0 12px 0 0;
   }
 
   a {
