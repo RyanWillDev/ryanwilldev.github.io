@@ -4,7 +4,6 @@
 
   // TODO: Find a way to pass journal without importing it
   import journal from '../../src/journal/journal.json';
-  // import { setMetaDescriptions } from '../tools/updateDescriptions';
 
   function highlightCode() {
     const code = document.querySelectorAll('code'); // eslint-disable-line
@@ -19,10 +18,6 @@
       return {
         entry: journal.find(curr => curr.data.url === this.$nuxt.$route.params.journalEntry),
       };
-    },
-    beforeMount() {
-      // highlightCode();
-      // setMetaDescriptions(this.entry.data.description);
     },
     mounted() {
       highlightCode();
