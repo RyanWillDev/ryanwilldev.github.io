@@ -1,3 +1,3 @@
 export default function({ route, redirect }) {
-  if (route.path === '/') redirect("/about");
+  if (route.path === '/') redirect('/about');
 }

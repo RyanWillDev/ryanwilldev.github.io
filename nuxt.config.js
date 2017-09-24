@@ -15,6 +15,11 @@ module.exports = {
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { charset: 'utf8' },
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.png',
+      },
       { name: 'description', content: 'Web Developer in the Nashville area with a passion for learning and creating custom websites and applications.', hid: 'desc' },
       { name: 'title', content: 'RyanWillDev' },
       { property: 'og:description', content: 'Web Developer in the Nashville area with a passion for learning and creating custom websites and applications.', hid: 'og:desc' },
