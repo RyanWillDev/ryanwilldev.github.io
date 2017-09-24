@@ -1,0 +1,11 @@
+Goals:
+
+1) Share my experience making react man
+  * As I went along I had to figure out how to go back and add necessary files
+    to the first commit
+2) Share the things I learned
+  * Using the phraseMap to easily toggle visibility of letters
+  * Using modules with HOF to easily and quickly add functionality
+  * Git rebasing
+
+3) Share how the workshop was received

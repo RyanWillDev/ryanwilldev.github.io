@@ -1,5 +1,5 @@
 <script type="text/javascript">
-  import journal from '../../src/journal/journal.json';
+  import journal from '../../journal/journal.json';
 
   export default {
     name: 'Journal',

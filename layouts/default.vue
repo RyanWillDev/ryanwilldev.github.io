@@ -69,14 +69,14 @@ li {
   @media screen and (max-width: 1100px) {
     .my-content-container {
       align-self: center;
-      margin-top: 10%;
+      margin-top: 6%;
       width: 90%;
     }
   }
 
   @media screen and (max-width: 600px) {
     .my-content-container {
-      margin-top: 40%;
+      margin-top: 24%;
     }
   }
 

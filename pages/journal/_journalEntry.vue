@@ -3,7 +3,7 @@
   import hljs from 'highlight.js';
 
   // TODO: Find a way to pass journal without importing it
-  import journal from '../../src/journal/journal.json';
+  import journal from '../../journal/journal.json';
 
   function highlightCode() {
     const code = document.querySelectorAll('code'); // eslint-disable-line

@@ -124,6 +124,7 @@
 
       nav {
         height: inherit;
+        // margin-left: auto;
       }
 
       h2 {
