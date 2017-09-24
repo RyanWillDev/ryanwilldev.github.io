@@ -8,7 +8,7 @@
     "publish": "node build/publish.js",
     "dev": "nuxt",
     "gen": "nuxt generate",
-    "build": "npm run gen"
+    "build": "npm run publish; npm run gen; node ./build/cpCNAME.js;"
   },
   "dependencies": {
     "highlight.js": "^9.9.0",
