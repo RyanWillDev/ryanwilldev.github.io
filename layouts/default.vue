@@ -1,7 +1,5 @@
 <script type="text/javascript">
-//   import { resetDescriptions } from '../tools/updateDescriptions';
 
-// TODO: See how to update the head data based on the page the user is on
   import NavBar from "../components/Navbar";
   export default {
     components: {
