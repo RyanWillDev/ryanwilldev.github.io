@@ -64,7 +64,7 @@
     }
 
     a:hover {
-      border-bottom: 2px solid #bcbcbc;
+      border-bottom: 2px solid #42b4d6;
     }
 
     a:active {
