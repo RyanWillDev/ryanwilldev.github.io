@@ -33,18 +33,18 @@
     }
   }
 
-  a {
+  a, a:hover {
       color: #42b4d6;
       font-weight: bold;
     }
 
     body, html {
-  color: #bcbcbc;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  height: 100vh;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    color: #bcbcbc;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
 
 .section-head {
