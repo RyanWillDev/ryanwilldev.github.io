@@ -1,8 +1,15 @@
+const journal = require('./journal/journal.json');
+
 module.exports = {
   router: {
     linkActiveClass: 'router-link-active',
     linkExactActiveClass: 'router-link-active',
     middleware: 'redirectAtRoot',
+  },
+  generate: {
+    routes() {
+      return new Promise(resolve => resolve(journal.map(entry => `journal/${entry.data.url}`)));
+    },
   },
   head: {
     title: 'RyanWillDev | Software Developer',
