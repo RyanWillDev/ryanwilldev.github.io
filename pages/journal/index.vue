@@ -37,10 +37,10 @@
     <span class="clear-btn" v-show="selectedTag" @click="updateSelectedTag('')">See All Entries</span>
     <ul>
       <li v-for="entry in filteredEntries()">
-        <router-link :to="entry.data.url" append>
+        <nuxt-link :to="entry.data.url" append>
           <h3>{{entry.data.title}}</h3>
           <span class="pub-date">{{entry.data.publicationDate}}</span>
-        </router-link>
+        </nuxt-link>
         <p>{{entry.data.description}}</p>
         <div class="tags">
           <span class="tag" v-for="tag in entry.data.tags" @click="updateSelectedTag(tag)">{{capitalize(tag)}}</span>
