@@ -5,6 +5,10 @@
 </script>
 
 <template>
+<!--
+  TODO: Need to create a layout for pages with formatted text
+  specifically the journal entry and this page.
+ -->
   <section class="about-container">
     <h1 class="section-head">Who is Ryan Will?</h1>
     <p>I am a passionate and motivated self taught software developer from Middle Tennessee. I currently work at <a target="_blank" href="https://metova.com">Metova</a>
@@ -23,14 +27,14 @@
 
   p {
     font-size: 1.15em;
-    text-indent: 20px;
+    /* text-indent: 20px; */
+  }
+
+  .about-container {
+    padding: 0 10%;
   }
 
   @media screen and (min-width: 1000px) {
-    .about-container {
-      padding: 0;
-    }
-
     p {
       padding: 10px 0;
     }

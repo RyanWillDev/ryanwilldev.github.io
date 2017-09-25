@@ -47,7 +47,7 @@
 
 .section-head {
   font-size: 2em;
-  margin: 5% 0;
+  margin: 7% 0 4% 0;
 }
 
 ul, li{
