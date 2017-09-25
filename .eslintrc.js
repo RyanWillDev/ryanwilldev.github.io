@@ -12,8 +12,9 @@ module.exports = {
   // check if imports actually resolve
   'settings': {
     'import/resolver': {
-      'webpack': {
-        'config': 'build/webpack.base.conf.js'
+      // TODO: Need to figure out how to get imports to not throw eslint errors
+      'node': {
+        'paths': ['pages', 'components']
       }
     }
   },

@@ -1,37 +1,35 @@
 <script type="text/javascript">
-// TODO: Find out why eslint is complaining about the above line in some vue files.
-  import hljs from 'highlight.js';
+import hljs from 'highlight.js';
 
-  // TODO: Find a way to pass journal without importing it
-  import journal from '../../journal/journal.json';
+import journal from '../../journal/journal.json';
 
-  function highlightCode() {
-    const code = document.querySelectorAll('code'); // eslint-disable-line
-    code.forEach((block) => {
-      hljs.highlightBlock(block);
-    });
-  }
+function highlightCode() {
+  const code = document.querySelectorAll('code'); // eslint-disable-line
+  code.forEach((block) => {
+    hljs.highlightBlock(block);
+  });
+}
 
-  export default {
-    name: 'JournalEntry',
-    async asyncData({ payload, params }) {
-      return {
-        entry: payload || journal.find(entry => entry.data.url === params.journalEntry),
-      };
-    },
-    mounted() {
-      highlightCode();
-    },
-    head() {
-      return {
-        meta: [
-          { name: 'description', content: this.entry.data.description, hid: 'desc' },
-          { name: 'og:description', content: this.entry.data.description, hid: 'og:desc' },
-          { name: 'twitter:description', content: this.entry.data.description, hid: 't:desc' },
-        ],
-      };
-    },
-  };
+export default {
+  name: 'JournalEntry',
+  async asyncData({ payload, params }) {
+    return {
+      entry: payload || journal.find(entry => entry.data.url === params.journalEntry),
+    };
+  },
+  mounted() {
+    highlightCode();
+  },
+  head() {
+    return {
+      meta: [
+        { name: 'description', content: this.entry.data.description, hid: 'desc' },
+        { name: 'og:description', content: this.entry.data.description, hid: 'og:desc' },
+        { name: 'twitter:description', content: this.entry.data.description, hid: 't:desc' },
+      ],
+    };
+  },
+};
 </script>
 
 <template>

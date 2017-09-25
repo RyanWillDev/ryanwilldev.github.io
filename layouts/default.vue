@@ -1,11 +1,11 @@
 <script type="text/javascript">
+import NavBar from '../components/Navbar';
 
-  import NavBar from "../components/Navbar";
-  export default {
-    components: {
-        NavBar,
-    },
-  };
+export default {
+  components: {
+    NavBar,
+  },
+};
 </script>
 
 <template>
@@ -45,24 +45,24 @@
   }
 
 
-.section-head {
-  font-size: 2em;
-  margin: 7% 0 4% 0;
-}
-
-ul, li{
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
-@media screen and (max-width: 500px) {
   .section-head {
-    text-align: center;
+    font-size: 2em;
+    margin: 7% 0 4% 0;
   }
-}
+
+  ul, li{
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  @media screen and (max-width: 500px) {
+    .section-head {
+      text-align: center;
+    }
+  }
 
   @media screen and (max-width: 1100px) {
     .my-content-container {
