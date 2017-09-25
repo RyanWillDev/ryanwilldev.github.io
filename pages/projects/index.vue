@@ -64,7 +64,7 @@
 
       @media screen and (max-width: 500px) {
         flex-wrap: wrap;
-        text-align: center;
+        justify-content: flex-start;
       }
 
       a {
@@ -88,7 +88,6 @@
 
         @media screen and (max-width: 500px) {
           height: 120px;
-          margin: 0 auto;
           width: 250px;
         }
       }

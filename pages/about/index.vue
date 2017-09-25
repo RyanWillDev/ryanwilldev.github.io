@@ -30,9 +30,12 @@
     /* text-indent: 20px; */
   }
 
-  .about-container {
-    padding: 0 10%;
+  @media screen and (min-width: 750px){
+    .about-container {
+      padding: 0 10%;
+    }
   }
+
 
   @media screen and (min-width: 1000px) {
     p {

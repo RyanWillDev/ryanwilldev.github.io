@@ -58,11 +58,11 @@ export default {
     list-style: none;
   }
 
-  @media screen and (max-width: 500px) {
+  /* @media screen and (max-width: 500px) {
     .section-head {
       text-align: center;
     }
-  }
+  } */
 
   @media screen and (max-width: 1100px) {
     .my-content-container {
