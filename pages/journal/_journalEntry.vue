@@ -3,7 +3,7 @@
   import hljs from 'highlight.js';
 
   // TODO: Find a way to pass journal without importing it
-  import journal from '../../../journal/journal.json';
+  import journal from '../../journal/journal.json';
 
   function highlightCode() {
     const code = document.querySelectorAll('code'); // eslint-disable-line
@@ -16,6 +16,8 @@
     name: 'JournalEntry',
     data() {
       return {
+        // TODO: Find a way to get the opened entry before the page renders
+        // the Hello world entry flashes before loading the correct page
         entry: journal.find(curr => curr.data.url === this.$nuxt.$route.params.journalEntry),
       };
     },
