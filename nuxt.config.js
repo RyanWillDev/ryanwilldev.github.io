@@ -8,7 +8,8 @@ module.exports = {
   },
   generate: {
     routes() {
-      return new Promise(resolve => resolve(journal.map(entry => `journal/${entry.data.url}`)));
+      return new Promise(resolve => resolve(journal.map(entry =>
+      ({ route: `journal/${entry.data.url}`, payload: entry }))));
     },
   },
   head: {

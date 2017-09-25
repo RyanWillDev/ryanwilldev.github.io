@@ -14,11 +14,9 @@
 
   export default {
     name: 'JournalEntry',
-    data() {
+    async asyncData({ payload, params }) {
       return {
-        // TODO: Find a way to get the opened entry before the page renders
-        // the Hello world entry flashes before loading the correct page
-        entry: journal.find(curr => curr.data.url === this.$nuxt.$route.params.journalEntry),
+        entry: payload || journal.find(entry => entry.data.url === params.journalEntry),
       };
     },
     mounted() {
