@@ -6,7 +6,7 @@ Something else that might be familar is completing your feature preparing, to pu
 Now, if you're anything like me git can still be a little intimidating when trying to fix your errors.
 Have no fear, though. This particular screw up is very easy to fix.
 
-First you just need to create a feature or bugfix branch from develop and then reset develop back to where it should be.
+First, create a feature or bugfix branch from develop. Then, reset develop back to where it should be.
 
 ```bash
 git branch <name-of-new-branch>
@@ -17,4 +17,4 @@ git log
 git reset <SHA-to-go-back-to> --hard
 ```
 
-And that's it. Now your new branch will contain the commits you made on develop and develop will be back where it started from.
+That's it. Now your new branch will contain the commits you made on develop and develop will be back where you want it.
