@@ -1,6 +1,6 @@
 
 {
-  "title": "TFW you realize you committed to the wrong branch.",
+  "title": "Help! I commited to the wrong branch.",
   "url": "commit-wrong-branch",
   "description": "Everyone's made their commits to the wrong branch at least once. Here is a simple fix.",
   "tags": ["git", "cli"],
