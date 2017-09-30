@@ -12,7 +12,7 @@ export default {
 
 <template>
     <ul>
-      <li v-for="link in links">
+      <li v-for="(link, index) in links" :key="index">
         <nuxt-link :to="link.href">{{link.name}}</nuxt-link>
       </li>
     </ul>

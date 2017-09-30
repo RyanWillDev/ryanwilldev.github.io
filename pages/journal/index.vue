@@ -36,14 +36,14 @@
     <h1 class="section-head">Journal</h1>
     <span class="clear-btn" v-show="selectedTag" @click="updateSelectedTag('')">See All Entries</span>
     <ul>
-      <li v-for="entry in filteredEntries()">
+      <li v-for="(entry, index) in filteredEntries()" :key="index">
         <nuxt-link :to="entry.data.url" append>
           <h3>{{entry.data.title}}</h3>
           <span class="pub-date">{{entry.data.publicationDate}}</span>
         </nuxt-link>
         <p>{{entry.data.description}}</p>
         <div class="tags">
-          <span class="tag" v-for="tag in entry.data.tags" @click="updateSelectedTag(tag)">{{capitalize(tag)}}</span>
+          <span class="tag" v-for="(tag, i) in entry.data.tags" :key="i" @click="updateSelectedTag(tag)">{{capitalize(tag)}}</span>
         </div>
       </li>
     </ul>
@@ -83,6 +83,11 @@
   }
 
   .tags {
+
+    .tag {
+      height: 100%;
+    }
+
     @media screen and (max-width: 500px) {
       display: flex;
       flex-wrap: wrap;
