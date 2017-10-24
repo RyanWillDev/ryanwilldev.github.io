@@ -3,5 +3,5 @@ node_modules/
 npm-debug.log
 vue.md
 journal/journal.json
-journal/drafts
+journal/drafts/*
 .nuxt
