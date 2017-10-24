@@ -26,7 +26,6 @@ const journal = entries.reduce((prev, dir) => {
 .sort((p, n) => {
   const pDate = Date.parse(p.data.publicationDate),
         nDate = Date.parse(n.data.publicationDate);
-  console.log(pDate > nDate);
 
   if (pDate > nDate) return -1;
   else if (pDate < nDate) return 1;
