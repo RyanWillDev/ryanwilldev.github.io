@@ -1,0 +1,7 @@
+{
+  "title": "Nuxt Rewrite",
+  "url": "nuxt-rewrite",
+  "description": "How I converted this site from a single page Vue site to a static site with Nuxt.",
+  "tags": ["vue", "nuxt"],
+  "publicationDate": "Tue Oct 24 2017 12:36:22 GMT-0500 (CDT)"
+}
