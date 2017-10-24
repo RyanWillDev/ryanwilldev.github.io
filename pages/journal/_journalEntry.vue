@@ -24,8 +24,10 @@ export default {
     return {
       meta: [
         { name: 'description', content: this.entry.data.description, hid: 'desc' },
+        { name: 'og:title', content: this.entry.data.title, hid: 'og:title' },
         { name: 'og:description', content: this.entry.data.description, hid: 'og:desc' },
-        { name: 'twitter:description', content: this.entry.data.description, hid: 't:desc' },
+        { name: 'og:url', content: `https://ryanwilldev.com/journal/${this.entry.data.url}`, hid: 'og:url' },
+        { name: 'og:type', content: 'article', hid: 'og:type' },
       ],
     };
   },
@@ -73,6 +75,14 @@ export default {
       border-radius: 5px;
       display: inline-flex;
       padding: 2px 4px;
+    }
+
+    p > code.hljs {
+      border-radius: 5px;
+      display: inline;
+      padding: 0 4px;
+
+
     }
 
     @media screen and (min-width: 750px) {
