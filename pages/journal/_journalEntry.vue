@@ -23,7 +23,7 @@ export default {
   head() {
     return {
       link: [
-        { rel: 'canonical', href: this.entry.data.url, hid: 'con' },
+        { rel: 'canonical', href: `https://ryanwilldev.com/journal/${this.entry.data.url}`, hid: 'con' },
       ],
       meta: [
         { name: 'description', content: this.entry.data.description, hid: 'desc' },
