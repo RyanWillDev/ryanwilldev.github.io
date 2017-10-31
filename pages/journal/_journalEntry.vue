@@ -22,6 +22,9 @@ export default {
   },
   head() {
     return {
+      link: [
+        { rel: 'canonical', href: this.entry.data.url, hid: 'con' },
+      ],
       meta: [
         { name: 'description', content: this.entry.data.description, hid: 'desc' },
         { name: 'og:title', content: this.entry.data.title, hid: 'og:title' },

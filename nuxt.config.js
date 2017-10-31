@@ -18,7 +18,7 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-dark.min.css' },
       { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' },
-      { rel: 'canonical', href: 'https://ryanwilldev.com' },
+      { rel: 'canonical', href: 'https://ryanwilldev.com', hid: 'con' },
     ],
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
