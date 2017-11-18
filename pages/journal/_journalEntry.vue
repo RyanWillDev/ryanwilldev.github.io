@@ -58,6 +58,12 @@ export default {
     }
 
     pre {
+      white-space: pre-wrap;
+
+      @media screen and (max-width: 750px) {
+        font-size: .8em;
+      }
+
       code {
       border-radius: 5px;
       margin: 24px 0;
