@@ -31,6 +31,7 @@ export default {
         { property: 'og:description', content: this.entry.data.description, hid: 'og:desc' },
         { property: 'og:url', content: `https://ryanwilldev.com/journal/${this.entry.data.url}`, hid: 'og:url' },
         { property: 'og:type', content: 'article', hid: 'og:type' },
+        { name: 'twitter:description', content: this.entry.data.description, hid: 't:desc' },
       ],
     };
   },

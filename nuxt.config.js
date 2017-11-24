@@ -34,9 +34,11 @@ module.exports = {
       { property: 'og:title', content: 'RyanWillDev', hid: 'og:title' },
       { property: 'og:url', content: 'https://ryanwilldev.com', hid: 'og:url' },
       { property: 'og:type', content: 'website', hid: 'og:type' },
-      { property: 'twitter:creator', content: '@RyanWillDev' },
-      { property: 'twitter:card', content: 'summary' },
       { property: 'og:image', content: 'https://ryanwilldev.com/logo.png' },
+      { name: 'twitter:creator', content: '@RyanWillDev' },
+      { name: 'twitter:card', content: 'summary' },
+      { name: 'twitter:image', content: 'https://ryanwilldev.com/logo.png' },
+      { name: 'twitter:description', content: 'Web Developer in the Nashville area with a passion for learning and creating custom websites and applications.', hid: 't:desc' },
     ],
   },
 };
