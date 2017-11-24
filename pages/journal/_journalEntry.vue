@@ -27,10 +27,10 @@ export default {
       ],
       meta: [
         { name: 'description', content: this.entry.data.description, hid: 'desc' },
-        { name: 'og:title', content: this.entry.data.title, hid: 'og:title' },
-        { name: 'og:description', content: this.entry.data.description, hid: 'og:desc' },
-        { name: 'og:url', content: `https://ryanwilldev.com/journal/${this.entry.data.url}`, hid: 'og:url' },
-        { name: 'og:type', content: 'article', hid: 'og:type' },
+        { property: 'og:title', content: this.entry.data.title, hid: 'og:title' },
+        { property: 'og:description', content: this.entry.data.description, hid: 'og:desc' },
+        { property: 'og:url', content: `https://ryanwilldev.com/journal/${this.entry.data.url}`, hid: 'og:url' },
+        { property: 'og:type', content: 'article', hid: 'og:type' },
       ],
     };
   },

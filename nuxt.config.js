@@ -36,7 +36,7 @@ module.exports = {
       { property: 'og:type', content: 'website', hid: 'og:type' },
       { property: 'twitter:creator', content: '@RyanWillDev' },
       { property: 'twitter:card', content: 'summary' },
-      { property: 'og:image', content: 'static/logo.png' },
+      { property: 'og:image', content: 'https://ryanwilldev.com/logo.png' },
     ],
   },
 };
