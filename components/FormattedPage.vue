@@ -32,7 +32,6 @@ export default {
 
   @media screen and (min-width: 1100px) {
     margin: 48px 3% 0 calc(#{$maxNavbarWidthL} + 2%);
-    width: 70%;
   }
 }
 </style>
