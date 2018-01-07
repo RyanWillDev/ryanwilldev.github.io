@@ -1,16 +1,12 @@
 <script type="text/javascript">
-  export default {
-    name: 'About',
-  };
+export default {
+  name: 'About',
+};
 </script>
 
 <template>
-<!--
-  TODO: Need to create a layout for pages with formatted text
-  specifically the journal entry and this page.
- -->
-  <section class="about-container">
-    <h1 class="section-head">Who is Ryan Will?</h1>
+  <div>
+    <h1>Who is Ryan Will?</h1>
     <p>I am a passionate and motivated self taught software developer from Middle Tennessee. I currently work at <a target="_blank" href="https://metova.com">Metova</a>
       and specialize in making rich and interactive web applications using modern techniques and technologies.
     </p>
@@ -20,26 +16,11 @@
       You can check out some of my work <a href="https://github.com/ryanwilldev">here</a>.
       If you'd like to know more, just <a target="_blank" href="https://twitter.com/intent/tweet/?screen_name=RyanWillDev">ask</a>!
     </p>
-  </section>
+  </div>
 </template>
 
 <style type="text/css" scoped>
-
-  p {
-    font-size: 1.15em;
-    /* text-indent: 20px; */
-  }
-
-  @media screen and (min-width: 750px){
-    .about-container {
-      padding: 0 10%;
-    }
-  }
-
-
-  @media screen and (min-width: 1000px) {
-    p {
-      padding: 10px 0;
-    }
-  }
+p {
+  font-size: 1.15em;
+}
 </style>
