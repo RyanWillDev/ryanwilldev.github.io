@@ -17,13 +17,17 @@ export default {
   color: $offBlack;
   font-size: 1.1em;
   line-height: 1.25;
-  margin-top: 2.5%;
+  margin: calc(#{$navbarHeightSm} + 6%) 2% 0 2%;
   text-align: left;
 
   a {
     color: $blueAccent;
     font-weight: bold;
     text-decoration: underline;
+  }
+
+  @media screen and (max-width: 700px) {
+    margin-top: calc(#{$navbarHeightSm} + 8%);
   }
 
   @media screen and (min-width: 1100px) {
