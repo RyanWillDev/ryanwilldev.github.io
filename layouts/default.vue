@@ -24,7 +24,6 @@ body,
 html {
   color: #bcbcbc;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
