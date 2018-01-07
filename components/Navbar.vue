@@ -17,7 +17,10 @@ export default {
       ],
       socialIcons: [
         { href: 'https://twitter.com/ryanwilldev', className: 'fa fa-twitter' },
-        { href: 'https://codepen.io/ryanwilldev', className: 'fa fa-codepen' },
+        {
+          href: 'https://www.linkedin.com/in/ryanwilldev',
+          className: 'fa fa-linkedin',
+        },
         { href: 'https://github.com/ryanwilldev', className: 'fa fa-github' },
       ],
     };
