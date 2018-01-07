@@ -46,6 +46,8 @@ export default {
 </template>
 
 <style lang="scss">
+@import '../scss/variables';
+
 .nav-container {
   background-color: #313233;
   height: 100%;
@@ -60,18 +62,18 @@ export default {
 
   a,
   a:visited {
-    color: #bcbcbc;
+    color: $lightGray;
     list-style: none;
     text-decoration: none;
   }
 
   a:hover {
-    border-bottom: 2px solid #42b4d6;
+    border-bottom: 2px solid $blueAccent;
   }
 
   a:active {
-    border-bottom: 2px solid #42b4d6;
-    color: #42b4d6;
+    border-bottom: 2px solid $blueAccent;
+    color: $blueAccent;
   }
 
   nav {
@@ -86,13 +88,14 @@ export default {
   }
 
   #callout {
-    color: #42b4d6;
+    color: $blueAccent;
   }
 
   @media screen and (max-width: 1100px) {
     align-items: center;
     display: flex;
-    height: 8%;
+    height: $navbarHeightMd;
+    max-width: 100%;
     width: 100%;
 
     nav {
@@ -109,33 +112,27 @@ export default {
   }
 
   @media screen and (max-width: 800px) {
-    align-items: center;
     display: flex;
-    height: 10%;
     width: 100%;
   }
 
-  @media screen and (max-width: 620px) {
+  @media screen and (max-width: 699px) {
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     -o-flex-wrap: wrap;
-    height: 15%;
+    height: 100px;
     justify-content: center;
 
     nav {
-      height: inherit;
+      height: 50px;
     }
 
     h2 {
-      margin-right: 0;
       padding: 10px 0 0 0;
+      width: 100%;
     }
-  }
-
-  @media screen and (orientation: landscape) and (max-width: 1000px) {
-    padding: 10px 0;
   }
 }
 </style>
