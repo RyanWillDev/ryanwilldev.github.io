@@ -17,7 +17,8 @@ export default {
   color: $offBlack;
   font-size: 1.1em;
   line-height: 1.25;
-  margin: calc(#{$navbarHeightSm} + 6%) 2% 0 2%;
+  margin: calc(#{$navbarHeightSm} + 6%) 2% 0 4%;
+  padding-right: 3%;
   text-align: left;
 
   a {
