@@ -1,5 +1,6 @@
 <script type="text/javascript">
 import journal from '../../journal/journal.json';
+import { formatTagForUrl } from '../../utils';
 
 export default {
   name: 'Journal',
@@ -15,19 +16,7 @@ export default {
         .map(word => word[0].toUpperCase().concat(word.slice(1)))
         .join(' ');
     },
-
-    filteredEntries() {
-      if (!this.$route.query.tag) return journal;
-
-      return journal.filter(entry =>
-        entry.data.tags.includes(this.$route.query.tag),
-      );
-    },
-  },
-  computed: {
-    tagSelected() {
-      return !!this.$route.query.tag;
-    },
+    formatTagForUrl: formatTagForUrl,
   },
 };
 </script>
@@ -35,25 +24,19 @@ export default {
 <template>
   <section>
     <h1 class="section-head">Journal</h1>
-    <nuxt-link
-      replace
-      class="clear-btn"
-      v-show="tagSelected"
-      :to="'/journal'">
-      See All Entries
-    </nuxt-link>
     <ul>
-      <li v-for="(entry, index) in filteredEntries()" :key="index">
-        <nuxt-link :to="entry.data.url" append>
+      <li v-for="(entry, index) in journal" :key="index">
+        <nuxt-link :key="index" :to="`/journal/entry/${entry.data.url}`">
           <h3>{{entry.data.title}}</h3>
           <span class="pub-date">{{entry.data.publicationDate}}</span>
         </nuxt-link>
+        <span>index:{{index}}</span>
         <p>{{entry.data.description}}</p>
         <div class="tags">
           <nuxt-link
-            class="tag"
-            :to="{ query: { tag: tag } }"
             v-for="(tag, i) in entry.data.tags"
+            class="tag"
+            :to="`/journal/filtered/${formatTagForUrl(tag)}`"
             :key="i">
               {{capitalize(tag)}}
           </nuxt-link>
