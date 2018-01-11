@@ -1,12 +1,12 @@
 <script type="text/javascript">
-import hljs from 'highlight.js';
+import { highlightBlock } from 'highlight.js';
 
-import journal from '../../journal/journal.json';
+import journal from '../../../journal/journal.json';
 
 function highlightCode() {
   const code = document.querySelectorAll('code'); // eslint-disable-line
   code.forEach(block => {
-    hljs.highlightBlock(block);
+    highlightBlock(block);
   });
 }
 
