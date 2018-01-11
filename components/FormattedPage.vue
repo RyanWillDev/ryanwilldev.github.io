@@ -17,7 +17,7 @@ export default {
   color: $offBlack;
   font-size: 1.1em;
   line-height: 1.25;
-  margin: calc(#{$navbarHeightSm} + 6%) 2% 0 4%;
+  margin: calc(#{$navbarHeightSm} + 6%) 2% 8% 4%;
   padding-right: 3%;
   text-align: left;
 
@@ -32,7 +32,7 @@ export default {
   }
 
   @media screen and (min-width: 1100px) {
-    margin: 48px 3% 0 calc(#{$maxNavbarWidthL} + 2%);
+    margin: 48px 3% 8% calc(#{$maxNavbarWidthL} + 2%);
   }
 }
 </style>
