@@ -1,4 +1,10 @@
-const journal = require('./journal/journal.json');
+const journal = require('./journal/journal.json'),
+  formatTagForUrl = require('./utils').formatTagForUrl,
+  tags = journal.reduce(
+    (tagArr, { data: { tags } }) =>
+      tagArr.concat(tags.filter(tag => !tagArr.includes(tag))),
+    []
+  );
 
 module.exports = {
   router: {
