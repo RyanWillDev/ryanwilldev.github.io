@@ -3,8 +3,10 @@ import journal from '../../journal/journal.json';
 
 export default {
   name: 'Journal',
-  props: {
-    journal: Array,
+  async asyncData({ payload }) {
+    return {
+      journal: payload || journal,
+    };
   },
   methods: {
     capitalize(tag) {
