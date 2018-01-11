@@ -14,8 +14,23 @@ module.exports = {
   },
   generate: {
     routes() {
-      return new Promise(resolve => resolve(journal.map(entry =>
-        ({ route: `journal/${entry.data.url}`, payload: entry }))));
+      return new Promise(resolve =>
+        resolve(
+          journal
+            .map(entry => ({
+              route: `journal/entry/${entry.data.url}`,
+              payload: entry,
+            }))
+            .concat(
+              tags.map(tag => ({
+                route: `journal/filtered/${tag}`,
+                payload: journal.filter(
+                  ({ data: { tags } }) => tags.indexOf(tag) > -1
+                ),
+              }))
+            )
+        )
+      );
     },
   },
   head: {
