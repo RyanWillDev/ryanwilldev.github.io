@@ -43,7 +43,6 @@ export default {
           <h3>{{entry.data.title}}</h3>
           <span class="pub-date">{{entry.data.publicationDate}}</span>
         </nuxt-link>
-        <span>index:{{index}}</span>
         <p>{{entry.data.description}}</p>
         <div class="tags">
           <nuxt-link
