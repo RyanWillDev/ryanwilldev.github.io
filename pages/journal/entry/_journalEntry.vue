@@ -27,7 +27,7 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: `https://ryanwilldev.com/journal/${this.entry.data.url}`,
+          href: `https://ryanwilldev.com/journal/entry/${this.entry.data.url}`,
           hid: 'con',
         },
       ],
@@ -74,6 +74,7 @@ export default {
 </template>
 
 <style lang="scss">
+@import '../../../scss/variables';
 .entry-container {
   h1 {
     margin-bottom: 0.2em;
@@ -122,6 +123,11 @@ export default {
 
   @media screen and (min-width: 750px) {
     padding-right: 10%;
+  }
+
+  blockquote {
+    border-left: 5px solid $lightGray;
+    padding: 10px;
   }
 }
 </style>
