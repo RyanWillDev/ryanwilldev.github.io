@@ -23,7 +23,7 @@ module.exports = {
             }))
             .concat(
               tags.map(tag => ({
-                route: `journal/filtered/${tag}`,
+                route: `journal/filtered/${formatTagForUrl(tag)}`,
                 payload: journal.filter(
                   ({ data: { tags } }) => tags.indexOf(tag) > -1
                 ),
