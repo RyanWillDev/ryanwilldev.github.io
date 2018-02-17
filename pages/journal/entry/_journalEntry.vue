@@ -93,6 +93,11 @@ export default {
       font-size: 0.8em;
     }
 
+
+    @media screen and (max-width: 650px) {
+      font-size: 0.65em;
+    }
+
     code {
       border-radius: 5px;
       margin: 24px 0;
@@ -121,7 +126,7 @@ export default {
     padding: 0 4px;
   }
 
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 650px) {
     padding-right: 10%;
   }
 
