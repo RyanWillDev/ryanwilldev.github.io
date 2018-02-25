@@ -18,7 +18,7 @@ export default {
 
     <p>
       I am always striving to become a better software developer by learning new technologies, techniques, and languages.
-      My current focus is on Progressive Web Apps.
+      My current focus is on Functional Programming. I am working through this course on <a href="https://www.youtube.com/watch?v=I8LbkfSSR58&list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_" target="_blank">Category Theory for Programmers</a>.
     </p>
 
     <p>
