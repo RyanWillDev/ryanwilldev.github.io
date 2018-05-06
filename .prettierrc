@@ -1,9 +1,11 @@
 {
   "singleQuote": true,
   "trailingComma": "es5",
+  "excludeFiles": ["**/**/*.md"],
   "overrides": [
     {
-      "excludeFiles": ["**/**/*.md"]
+      "files": ".prettierrc",
+      "options": { "parser": "json" }
     }
   ]
 }

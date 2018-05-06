@@ -6,3 +6,4 @@ journal/journal.json
 journal/drafts/*
 .nuxt
 .cache/
+.vscode/
