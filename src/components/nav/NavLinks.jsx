@@ -7,29 +7,50 @@ import { socialIconList } from '../socialIcons';
 import medaiQueries from '../../mediaQueries';
 import { brandBlack, brandGray, brandBlue } from '../../styleConstants';
 
+const activeLinkStyle = {
+  borderBottom: `2px solid ${brandBlue}`,
+  paddingBottom: 3,
+};
+
 const socialIconLinks = [
   'https://twitter.com/RyanWillDev',
   'https://linkedin.com/in/ryanwilldev',
   'https://github.com/RyanWillDev',
 ];
 
-const NavLinks = ({ className, navIsOpen }) => (
+const NavLinks = ({ className, openNav, closeNav, navIsOpen }) => (
   <div className={className}>
     <ul>
       <li>
-        <Link to="/about">About</Link>
+        <Link
+          onFocus={openNav}
+          onBlur={closeNav}
+          activeStyle={activeLinkStyle}
+          to="/about"
+        >
+          About
+        </Link>
       </li>
       <li>
-        <Link to="/journal">Journal</Link>
+        <Link onFocus={openNav} activeStyle={activeLinkStyle} to="/writing">
+          Writing
+        </Link>
       </li>
       <li>
-        <Link to="/projects">Projects</Link>
+        <Link onFocus={openNav} activeStyle={activeLinkStyle} to="/projects">
+          Projects
+        </Link>
       </li>
     </ul>
     <ul className="social-icons">
       {socialIconList.map((Icon, i) => (
         <li key={i}>
-          <a href={socialIconLinks[i]} target="_blank">
+          <a
+            onFocus={openNav}
+            onBlur={i == socialIconLinks.length - 1 ? closeNav : () => {}}
+            href={socialIconLinks[i]}
+            target="_blank"
+          >
             <Icon color={brandGray} />
           </a>
         </li>
@@ -47,7 +68,6 @@ export default galamorous(NavLinks)(
     fontSize: '1.5rem',
     padding: '.75rem',
     position: 'absolute',
-    top: '60px',
     width: '100%',
     [medaiQueries.tabletUp]: {
       flexWrap: 'nowrap',
@@ -60,16 +80,12 @@ export default galamorous(NavLinks)(
       margin: '0 auto',
       width: '100%',
       '& a': {
-        borderBottom: '2px solid transparent',
+        paddingBottom: '5px',
         color: brandGray,
-        padding: '5px',
-        '&:hover': {
-          borderBottom: `2px solid ${brandBlue}`,
-        },
       },
       [medaiQueries.tabletUp]: {
         justifyContent: 'space-between',
-        margin: '0',
+        marginLeft: '8px',
         width: '35%',
       },
       [medaiQueries.desktop]: {
@@ -79,7 +95,7 @@ export default galamorous(NavLinks)(
         display: 'flex',
         margin: ' 1rem 0 0 auto',
         [medaiQueries.tabletUp]: {
-          margin: '0 0 0 auto',
+          margin: '0 16px 0 auto',
         },
         '& a': {
           paddingBottom: '3px',
@@ -92,6 +108,6 @@ export default galamorous(NavLinks)(
     },
   },
   ({ navIsOpen }) => ({
-    display: navIsOpen ? 'flex' : 'none',
+    top: navIsOpen ? '60px' : '-60px',
   })
 );

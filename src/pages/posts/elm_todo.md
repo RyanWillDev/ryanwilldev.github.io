@@ -1,0 +1,122 @@
+---
+title: "Elm First Impressions"
+path: "/writing/elm-first-impressions"
+description: "My impressions of Elm while building the customary To Do application."
+tags: ["elm", "functional programming"]
+publicationDate: "Sat Jul 22 2017 00:00:00 GMT-0500 (CDT)"
+published: true
+---
+
+I have been interested in functional programming languages, particularly Elm,
+for a while but have been hesitant to take the plunge and build something with one.
+After listening to quite a few episodes of [Elm Town](https://elmtown.github.io/) and watching some talks on Elm,
+I decided to make the customary To Do application.
+I know. You can't get much more cliche than your first application with a new language being a To Do app,
+but it allows you to test out the language relatively quickly.
+You can find my code [here](https://github.com/RyanWillDev/elm-todo).
+
+## The Development Experience
+
+When writing Elm code I spent quite a lot of time trying to appease the compiler.
+I would make a change to the code and the compiler would tell me I did something wrong.
+I'd make another change and the compiler would become angry again.
+
+It was a vicious cycle.
+
+You may think this would slow your development down tremendously. Well... You're right. It does, but the pay off is worth it.
+After I won my first major battle with the compiler and my app finally rendered in the browser,
+the first thing I did was open the dev tools and start clicking around.
+I did not believe the compiler when it told me everything was fine.
+
+Coming from the JavaScript world, I was sure there was a runtime exception waiting to be thrown.
+I just needed to find it.
+But after a few minutes of adding and completing to do's I could not break my app.
+The compiler was right.
+
+With Elm you have a pretty strong guarantee that if your code compiles it will run without error.
+This guarantee is made possible by Elm's type system and compiler working together to minimize the number of
+mistakes you make while building your application.
+
+## The Type System
+
+The type system was one of the main reasons I was interested in Elm and other functional languages.
+The ability to describe and model your data in a more meaningful way was very appealing.
+It is like being able to communicate with your application on a deeper level by describing exactly what you want
+the shape of your data to be.
+
+For instance, in my to do application I define a to do as such:
+
+```elm
+type alias Todo =
+  { title : String
+  , completed : Bool
+  , id : Int
+  }
+```
+
+Comparing that to JavaScript, all we would have to work with is an object with default values.
+
+```javascript
+const todoModel = {
+  title: '',
+  completed: false,
+  id: 0,
+};
+```
+
+The type alias above does not seem particularly special at first, but the power becomes evident once you begin to leverage
+that definition throughout the application.
+
+One example is how the Todo type is used inside the model's type definition.
+
+```elm
+type alias Model =
+  { newTodoTitle : String
+  , todoList : List Todo
+  , currentFilter : Filter
+  , prevId : Int
+  }
+```
+
+As you can see above, I was able to tell the Elm program that the todoList was not only a list but that the list was
+to contain only Todo's. Now Elm knows exactly what I want my list to contain.
+
+Having never worked with a statically typed language before Elm's syntax and features took a little getting used to.
+Fortunately the Elm community and Evan Czaplicki, the creator of Elm, are focused on making Elm easy to use.
+This means that while there is a slight learning curve to Elm it is not as drastic as other languages.
+
+One of the biggest benefits of Elm's type system is it encourages you to spend time up front determining the
+structure of your application.
+As developer's, we tend to want to get our hands on the keyboard and start building something as quickly as possible, which
+can cause us to neglect forethought and planning.
+It is nice to have something to remind you that those things are necessary.
+
+## The Elm Architecture
+
+Elm web applications have a preferred structure known as the Elm Architecture.
+It consists of a series of functions (model, view, and update) that describe your app and the way it can change.
+
+A **very** brief explanation of the Elm Architecture is the model holds the data/state of your application,
+the view function describes to the Elm virtual DOM what to render,
+and the update function receives messages from the view and returns a new model describing the updated state of your application.
+
+Having used Redux before and knowing it was inspired by the Elm Architecture, I had a basic understanding of what was going on.
+Unlike with Redux, you do not have to wire together the Elm Architecture. The language takes care of that for you.
+Honestly, this bothered me a little when starting on my app. I wanted to understand what was going on behind the scenes.
+Once I accepted that Elm would take care of connecting things, working with the Elm Architecture was very pleasant.
+
+## The Tooling
+
+I want to start by saying the tooling around Elm is pretty great.
+The packages for the Atom editor add a lot of cool features for working with Elm.
+I really enjoyed the inline compiler errors provided by the [Elm Linter](https://atom.io/packages/linter-elm-make),
+the autocompletion provided by [Elmjutsu](https://atom.io/packages/elmjutsu),
+but by far my favorite was [Elm Format](https://atom.io/packages/elm-format).
+
+Coming from a JavaScript background the formatting of Elm was a little strange at first.
+The ability to just throw some Elm code on the page hit cmd-s and have Elm Format take care of the formatting
+was great. It allowed me to maintain focus on trying to solve the current problem instead of getting caught up with formatting.
+
+I also found [Elm Reactor](https://github.com/elm-lang/elm-reactor) to be an invaluable tool while working with Elm.
+To have your code compiled on the fly and see your changes reflected in the browser made developing with Elm
+almost as easy as modern JS development.

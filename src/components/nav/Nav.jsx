@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import glamorous from 'glamorous';
+import Link from 'gatsby-link';
 
 import NavLogo from './NavLogo';
 import NavLinks from './NavLinks';
-import { Twitter, socialIconList } from '../socialIcons';
-import { brandBlack, brandGray } from '../../styleConstants';
 
 class Nav extends Component {
   constructor() {
@@ -51,9 +50,15 @@ class Nav extends Component {
               width: '125px',
             }}
           >
-            <NavLogo navIsOpen={this.state.navIsOpen} />
+            <Link activeStyle={{ borderBottom: 'none' }} to="/">
+              <NavLogo navIsOpen={this.state.navIsOpen} />
+            </Link>
           </div>
-          <NavLinks navIsOpen={this.state.navIsOpen} />
+          <NavLinks
+            openNav={this.openNav}
+            closeNav={this.closeNav}
+            navIsOpen={this.state.navIsOpen}
+          />
         </div>
       </nav>
     );

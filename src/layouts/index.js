@@ -4,6 +4,8 @@ import Helmet from 'react-helmet';
 
 import Header from '../components/header';
 import './index.css';
+import { brandBlack } from '../styleConstants';
+import logo from '../../static/logo.png';
 
 const Layout = ({ children, data }) => (
   <div>
@@ -12,17 +14,33 @@ const Layout = ({ children, data }) => (
       meta={[
         { name: 'description', content: data.site.siteMetadata.description },
         { name: 'keywords', content: data.site.siteMetadata.keywords },
+        { property: 'og:title', content: 'RyanWillDev' },
+        { property: 'og:url', content: 'https://ryanwilldev.com' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:image', content: `${logo}` },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        { name: 'twitter:creator', content: '@RyanWillDev' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:image', content: `${logo}` },
+        {
+          name: 'twitter:descriptions',
+          content: data.site.siteMetadata.description,
+        },
       ]}
     >
       <link
         href="https://fonts.googleapis.com/css?family=Open+Sans"
         rel="stylesheet"
       />
+      <link rel="icon" type="image/x-icon" href={logo} />
+      <link rel="canonical" href="https://ryanwilldev.com" />
     </Helmet>
-    <Header siteTitle={data.site.siteMetadata.title} />
+    <Header />
     <div
       style={{
-        margin: '100px auto 0',
+        color: brandBlack,
+        margin: '150px auto 0',
         maxWidth: 960,
         padding: '0px 1.0875rem 1.45rem',
         paddingTop: 0,

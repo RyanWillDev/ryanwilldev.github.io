@@ -18,7 +18,7 @@ const HeaderContainer = glamorous.header({
   zIndex: 100,
 });
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <HeaderContainer>
     <Nav />
   </HeaderContainer>
