@@ -1,24 +1,25 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
+import { formatDate, sortByDate } from '../utils';
 import { brandGray } from '../styleConstants';
-import { formatDate } from '../utils';
 
-const PostsByTag = ({ pathContext, data }) => {
-  const { tag } = pathContext;
-  const { edges, totalCount } = data.allMarkdownRemark;
-  const tagHeader = `${totalCount} post${
-    totalCount === 1 ? '' : 's'
-  } tagged with ${tag}`;
+const JournalPage = props => {
+  const {
+    data: {
+      allMarkdownRemark: { edges: posts },
+    },
+  } = props;
+
+  posts.sort(sortByDate);
 
   return (
     <div>
-      <h1 style={{ marginBottom: '1rem', textTransform: 'capitalize' }}>
-        {tagHeader}
+      <h1>
+        RyanWill<span className="callout">Write</span>
       </h1>
-      <Link to="/writing">Back to All Posts</Link>
-      <ul style={{ marginTop: '2rem' }}>
-        {edges.map(({ node }) => (
+      <ul>
+        {posts.map(({ node }) => (
           <li
             key={node.id}
             style={{
@@ -44,17 +45,14 @@ const PostsByTag = ({ pathContext, data }) => {
             </p>
             {node.frontmatter.tags.map((tag, i) => (
               <Link
-                key={i}
                 to={`/tags/${tag
                   .toLowerCase()
                   .split(' ')
                   .join('-')}`}
               >
                 <span
-                  style={{
-                    marginRight: '.5rem',
-                    textTransform: 'capitalize',
-                  }}
+                  key={i}
+                  style={{ marginRight: '.5rem', textTransform: 'capitalize' }}
                 >
                   {tag}
                 </span>
@@ -67,20 +65,25 @@ const PostsByTag = ({ pathContext, data }) => {
   );
 };
 
-export default PostsByTag;
+export default JournalPage;
 
 export const pageQuery = graphql`
-  query TagPage($tag: String) {
-    allMarkdownRemark(filter: { frontmatter: { tags: { in: [$tag] } } }) {
-      totalCount
+  query AllPosts {
+    allMarkdownRemark {
       edges {
         node {
+          excerpt
+          id
+          headings {
+            depth
+            value
+          }
           frontmatter {
             title
             description
-            path
-            tags
             publicationDate
+            tags
+            path
           }
         }
       }

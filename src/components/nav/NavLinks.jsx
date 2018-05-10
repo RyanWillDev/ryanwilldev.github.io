@@ -108,6 +108,6 @@ export default galamorous(NavLinks)(
     },
   },
   ({ navIsOpen }) => ({
-    top: navIsOpen ? '60px' : '-60px',
+    top: navIsOpen ? '60px' : '-600px',
   })
 );

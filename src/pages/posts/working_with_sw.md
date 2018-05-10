@@ -2,7 +2,7 @@
 title: "Putting Service workers to work"
 path: "/writing/working-with-service-workers"
 description: "An introduction to Service workers. What they are how they work, and what they can do for you."
-tags: ["PWA", "Progressive Web App", "PWA", "service workers"]
+tags: ["PWA", "Progressive Web App", "service workers"]
 publicationDate: "Sat Jan 13 2018 12:36:15 GMT-0600 (CST)"
 published: true
 ---
