@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import galamorous from 'glamorous';
 
-import { socialIconList } from '../socialIcons';
+import { socialIconList } from '../SocialIcons';
 
 import medaiQueries from '../../mediaQueries';
 import { brandBlack, brandGray, brandBlue } from '../../styleConstants';
