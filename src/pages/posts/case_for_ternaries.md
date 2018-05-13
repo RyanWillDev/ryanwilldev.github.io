@@ -3,7 +3,7 @@ title: "The case for ternaries"
 path: "/writing/case-for-ternaries"
 description: "The conditional ternary operator can be a little off putting to some, but it is extremely useful. So, what is it and when should it be used?"
 tags: ["JavaScript"]
-publicationDate: "Sat Feb 17 2018 14:54:32 GMT-0600 (CST)"
+publicationDate: "2018-02-17"
 published: true
 ---
 

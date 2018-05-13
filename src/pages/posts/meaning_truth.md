@@ -3,7 +3,7 @@ title: "The Meaning of Truth"
 path: "/writing/js-truthy-falsy"
 description: "How to use the idea of truthy and falsy to write simpler code."
 tags: [ "JavaScript" ]
-publicationDate: "Sat Feb 10 2018 15:59:57 GMT-0600 (CST)"
+publicationDate: "2018-02-10"
 published: true
 ---
 

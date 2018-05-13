@@ -3,7 +3,7 @@ title: "Hello World"
 path: "/writing/hello-world"
 description: "The first entry in my journal gives a brief rundown of the technologies used to build this site."
 tags: ["vue", "showdownjs", "highlightjs", "node", "JavaScript"]
-publicationDate: "Sat Jun 03 2017 00:00:00 GMT-0500 (CDT)"
+publicationDate: "2017-03-06"
 published: true
 ---
 

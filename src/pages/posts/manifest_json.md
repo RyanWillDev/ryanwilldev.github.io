@@ -3,7 +3,7 @@ title: "Web Manifest"
 path: "/writing/pwa-manifest"
 description: "The web manifest file is the first step on the road to a building a Progressive Web App."
 tags: ["PWA", "Progressive Web App"]
-publicationDate: "Thu Jan 04 2018 18:05:10 GMT-0600 (CST)"
+publicationDate: "2018-01-04"
 published: true
 ---
 

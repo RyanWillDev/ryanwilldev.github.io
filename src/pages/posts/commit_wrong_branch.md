@@ -3,7 +3,7 @@ title: "Help! I commited to the wrong branch."
 path: "/writing/commit-wrong-branch"
 description: "Everyone's made their commits to the wrong branch at least once. Here is a simple fix."
 tags: ["git", "cli"]
-publicationDate: "Sat Sep 30 2017 00:00:00 GMT-0500 (CDT)"
+publicationDate: "2017-09-30"
 published: true
 ---
 

@@ -14,7 +14,7 @@ class Nav extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ navIsOpen: false });
-    }, 1250);
+    }, 1500);
   }
 
   toggleNav = () => {
@@ -50,9 +50,7 @@ class Nav extends Component {
               width: '125px',
             }}
           >
-            <Link activeStyle={{ borderBottom: 'none' }} to="/">
-              <NavLogo navIsOpen={this.state.navIsOpen} />
-            </Link>
+            <NavLogo navIsOpen={this.state.navIsOpen} />
           </div>
           <NavLinks
             openNav={this.openNav}

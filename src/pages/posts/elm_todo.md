@@ -3,7 +3,7 @@ title: "Elm First Impressions"
 path: "/writing/elm-first-impressions"
 description: "My impressions of Elm while building the customary To Do application."
 tags: ["elm", "functional programming"]
-publicationDate: "Sat Jul 22 2017 00:00:00 GMT-0500 (CDT)"
+publicationDate: "2017-07-22"
 published: true
 ---
 

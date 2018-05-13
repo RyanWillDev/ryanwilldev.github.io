@@ -7,7 +7,7 @@ import './index.css';
 import { brandBlack } from '../styleConstants';
 import logo from '../../static/logo.png';
 
-const Layout = ({ children, data }) => (
+const Layout = ({ children, data, location }) => (
   <div>
     <Helmet
       title={data.site.siteMetadata.title}
@@ -20,11 +20,15 @@ const Layout = ({ children, data }) => (
         { property: 'og:image', content: `${logo}` },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
+        {
+          property: 'og:description',
+          content: data.site.siteMetadata.description,
+        },
         { name: 'twitter:creator', content: '@RyanWillDev' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:image', content: `${logo}` },
         {
-          name: 'twitter:descriptions',
+          name: 'twitter:description',
           content: data.site.siteMetadata.description,
         },
       ]}
@@ -34,7 +38,10 @@ const Layout = ({ children, data }) => (
         rel="stylesheet"
       />
       <link rel="icon" type="image/x-icon" href={logo} />
-      <link rel="canonical" href="https://ryanwilldev.com" />
+      <link
+        rel="canonical"
+        href={`https://ryanwilldev.com${location.pathname}`}
+      />
     </Helmet>
     <Header />
     <div

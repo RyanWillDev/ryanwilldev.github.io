@@ -23,6 +23,17 @@ const NavLinks = ({ className, openNav, closeNav, navIsOpen }) => (
     <ul>
       <li>
         <Link
+          exact
+          onFocus={openNav}
+          onBlur={closeNav}
+          activeStyle={activeLinkStyle}
+          to="/"
+        >
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link
           onFocus={openNav}
           onBlur={closeNav}
           activeStyle={activeLinkStyle}
@@ -86,16 +97,20 @@ export default galamorous(NavLinks)(
       [medaiQueries.tabletUp]: {
         justifyContent: 'space-between',
         marginLeft: '8px',
-        width: '35%',
+        maxWidth: '60%',
       },
       [medaiQueries.desktop]: {
-        maxWidth: '325px',
+        maxWidth: '40%',
+      },
+      [medaiQueries.xsmall]: {
+        fontSize: '1.25rem',
       },
       '&.social-icons': {
         display: 'flex',
         margin: ' 1rem 0 0 auto',
         [medaiQueries.tabletUp]: {
           margin: '0 16px 0 auto',
+          maxWidth: '25%',
         },
         '& a': {
           paddingBottom: '3px',

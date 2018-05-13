@@ -15,17 +15,8 @@ export function formatDate(date) {
     ],
     pubDate = new Date(date),
     pubMonth = pubDate.getMonth(),
-    pubDay = pubDate.getDate(),
+    pubDay = pubDate.getDate() + 1,
     pubYear = pubDate.getFullYear();
 
   return `${months[pubMonth]} ${pubDay}, ${pubYear}`;
 }
-
-export const sortByDate = (p, n) => {
-  const pDate = Date.parse(p.node.frontmatter.publicationDate),
-    nDate = Date.parse(n.node.frontmatter.publicationDate);
-
-  if (pDate > nDate) return -1;
-  else if (pDate < nDate) return 1;
-  else return 0;
-};
