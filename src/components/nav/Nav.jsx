@@ -17,10 +17,6 @@ class Nav extends Component {
     }, 1500);
   }
 
-  toggleNav = () => {
-    this.setState({ navIsOpen: !this.state.navIsOpen });
-  };
-
   openNav = () => {
     this.setState({ navIsOpen: true });
   };
@@ -40,7 +36,6 @@ class Nav extends Component {
           }}
           onMouseEnter={this.openNav}
           onMouseLeave={this.closeNav}
-          onClick={this.toggleNav}
         >
           <div
             className="nav__logo"

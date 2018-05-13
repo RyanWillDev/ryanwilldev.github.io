@@ -19,7 +19,7 @@ const socialIconLinks = [
 ];
 
 const NavLinks = ({ className, openNav, closeNav, navIsOpen }) => (
-  <div className={className}>
+  <div className={navIsOpen ? 'nav-links open' : 'nav-links'}>
     <ul>
       <li>
         <Link
@@ -70,59 +70,4 @@ const NavLinks = ({ className, openNav, closeNav, navIsOpen }) => (
   </div>
 );
 
-export default galamorous(NavLinks)(
-  {
-    backgroundColor: brandBlack,
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'space-between',
-    fontSize: '1.5rem',
-    padding: '.75rem',
-    position: 'absolute',
-    width: '100%',
-    [medaiQueries.tabletUp]: {
-      flexWrap: 'nowrap',
-    },
-    '& ul': {
-      alignItems: 'center',
-      display: 'flex',
-      justifyContent: 'space-around',
-      listStyle: 'none',
-      margin: '0 auto',
-      width: '100%',
-      '& a': {
-        paddingBottom: '5px',
-        color: brandGray,
-      },
-      [medaiQueries.tabletUp]: {
-        justifyContent: 'space-between',
-        marginLeft: '8px',
-        maxWidth: '60%',
-      },
-      [medaiQueries.desktop]: {
-        maxWidth: '40%',
-      },
-      [medaiQueries.xsmall]: {
-        fontSize: '1.25rem',
-      },
-      '&.social-icons': {
-        display: 'flex',
-        margin: ' 1rem 0 0 auto',
-        [medaiQueries.tabletUp]: {
-          margin: '0 16px 0 auto',
-          maxWidth: '25%',
-        },
-        '& a': {
-          paddingBottom: '3px',
-        },
-        '& li': {
-          height: '1.5rem',
-          width: '1.5rem',
-        },
-      },
-    },
-  },
-  ({ navIsOpen }) => ({
-    top: navIsOpen ? '60px' : '-600px',
-  })
-);
+export default NavLinks;

@@ -645,12 +645,95 @@ pre tt:after {
 
 h1 {
   background-color: #bcbcbc;
-  /* background-color: #313233; */
-  /* color: #bcbcbc; */
   display: block;
   margin-bottom: 2rem;
   padding: 0.5rem 2rem 0.5rem 0.5rem;
 }
 .callout {
   color: #42b4d6;
+}
+
+header {
+  background-color: #313233;
+  margin-bottom: 1.45rem;
+  color: #bcbcbc;
+  max-height: 80px;
+  padding: 8px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav-links {
+  background-color: #313233;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  padding: 0.75rem;
+  position: absolute;
+  top: -600px;
+  width: 100%;
+}
+
+.nav-links.open {
+  top: 60px;
+}
+
+.nav-links > ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.nav-links > ul a {
+  padding-bottom: 5px;
+  color: #bcbcbc;
+}
+
+.nav-links .social-icons {
+  display: flex;
+  margin: 1rem 0 0 auto;
+}
+
+.nav-links .social-icons a {
+  padding-bottom: 3px;
+}
+
+.nav-links .social-icons li {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+@media screen and (min-width: 720px) {
+  .nav-links {
+    flex-wrap: nowrap;
+  }
+
+  .nav-links > ul {
+    justify-content: space-between;
+    margin-left: 8px;
+    max-width: 60%;
+  }
+
+  .nav-links .social-icons {
+    margin: 0 16px 0 auto;
+    max-width: 25%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-links > ul {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .nav-links > ul {
+    font-size: 1.25rem;
+  }
 }
