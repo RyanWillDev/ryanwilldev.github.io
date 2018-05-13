@@ -18,10 +18,8 @@ const HeaderContainer = glamorous.header({
   zIndex: 100,
 });
 
-const Header = () => (
+export const Header = () => (
   <HeaderContainer>
     <Nav />
   </HeaderContainer>
 );
-
-export default Header;
