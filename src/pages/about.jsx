@@ -32,8 +32,8 @@ const AboutPage = ({ className }) => (
         <p>
           Hey there, my name is Ryan Will, but I suspect you already knew that.
           I am a self-taught software developer from Tennessee. I am interested
-          in all aspects of software development from web and game development
-          to programming language design.
+          in many aspects of computer science including networking, web
+          development, and programming language design.
         </p>
         <p>
           Being a naturally driven and curious person, I am constantly looking
