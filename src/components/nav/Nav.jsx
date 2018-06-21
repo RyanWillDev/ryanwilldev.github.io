@@ -8,13 +8,7 @@ import NavLinks from './NavLinks';
 class Nav extends Component {
   constructor() {
     super();
-    this.state = { navIsOpen: true };
-  }
-
-  componentDidMount() {
-    setTimeout(() => {
-      this.setState({ navIsOpen: false });
-    }, 1500);
+    this.state = { navIsOpen: false };
   }
 
   openNav = () => {
