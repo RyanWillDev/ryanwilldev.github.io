@@ -4,8 +4,7 @@ import galamorous from 'glamorous';
 
 import { socialIconList } from '../SocialIcons';
 
-import medaiQueries from '../../mediaQueries';
-import { brandBlack, brandGray, brandBlue } from '../../styleConstants';
+import { brandGray, brandBlue } from '../../styleConstants';
 
 const activeLinkStyle = {
   borderBottom: `2px solid ${brandBlue}`,
@@ -18,37 +17,26 @@ const socialIconLinks = [
   'https://github.com/RyanWillDev',
 ];
 
-const NavLinks = ({ className, openNav, closeNav, navIsOpen }) => (
+const NavLinks = ({ navIsOpen, closeNav }) => (
   <div className={navIsOpen ? 'nav-links open' : 'nav-links'}>
     <ul>
       <li>
-        <Link
-          exact
-          onFocus={openNav}
-          onBlur={closeNav}
-          activeStyle={activeLinkStyle}
-          to="/"
-        >
+        <Link exact onClick={closeNav} activeStyle={activeLinkStyle} to="/">
           Home
         </Link>
       </li>
       <li>
-        <Link
-          onFocus={openNav}
-          onBlur={closeNav}
-          activeStyle={activeLinkStyle}
-          to="/about"
-        >
+        <Link onClick={closeNav} activeStyle={activeLinkStyle} to="/about">
           About
         </Link>
       </li>
       <li>
-        <Link onFocus={openNav} activeStyle={activeLinkStyle} to="/writing">
+        <Link onClick={closeNav} activeStyle={activeLinkStyle} to="/writing">
           Writing
         </Link>
       </li>
       <li>
-        <Link onFocus={openNav} activeStyle={activeLinkStyle} to="/projects">
+        <Link onClick={closeNav} activeStyle={activeLinkStyle} to="/projects">
           Projects
         </Link>
       </li>
@@ -56,12 +44,7 @@ const NavLinks = ({ className, openNav, closeNav, navIsOpen }) => (
     <ul className="social-icons">
       {socialIconList.map((Icon, i) => (
         <li key={i}>
-          <a
-            onFocus={openNav}
-            onBlur={i == socialIconLinks.length - 1 ? closeNav : () => {}}
-            href={socialIconLinks[i]}
-            target="_blank"
-          >
+          <a href={socialIconLinks[i]} target="_blank" onClick={closeNav}>
             <Icon color={brandGray} />
           </a>
         </li>

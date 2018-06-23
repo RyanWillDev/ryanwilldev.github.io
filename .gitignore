@@ -7,3 +7,5 @@ journal/drafts/*
 .nuxt
 .cache/
 .vscode/
+public/
+drafts/

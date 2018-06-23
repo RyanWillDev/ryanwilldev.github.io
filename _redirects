@@ -1,2 +1,5 @@
 # Redirect default Netlify subdomain to primary domain
 https://suspicious-mclean-cd7352.netlify.com/* https://www.ryanwilldev.com/:splat 301!
+
+https://ryanwilldev.com/journal https://www.ryanwilldev.com/writing 301!
+https://ryanwilldev.com/journal/entry/* https://www.ryanwilldev.com/writing/:splat 301!
