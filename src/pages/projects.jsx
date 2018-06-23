@@ -4,9 +4,13 @@ import glamorous from 'glamorous';
 import BrewRank from '../../static/BrewRank.png';
 import BoroDevPWA from '../../static/boro_dev_pwa.jpg';
 import { brandBlack } from '../styleConstants';
+import mediaQueries from '../mediaQueries';
 
 const ProjectImage = glamorous.img({
   maxWidth: '350px',
+  [mediaQueries.xsmall]: {
+    maxWidth: '275px',
+  },
 });
 
 const ProjectContainer = glamorous.div({
