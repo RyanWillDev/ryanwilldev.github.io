@@ -151,7 +151,10 @@ select {
 [type='submit'],
 button,
 html [type='button'] {
-  -webkit-appearance: button;
+  -webkit-appearance: none;
+  border: none;
+  background-color: transparent;
+  padding: 0;
 }
 [type='button']::-moz-focus-inner,
 [type='reset']::-moz-focus-inner,
@@ -680,7 +683,7 @@ header {
 
 .nav-links.open {
   transition: top 0.2s ease-in-out;
-  top: 60px;
+  top: 64px;
   visibility: visible;
 }
 
