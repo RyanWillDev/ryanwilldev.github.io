@@ -1,8 +1,12 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import Link from 'gatsby-link';
 
+import { socialIconList, socialIconLinks } from '../components/SocialIcons';
 import 'prismjs/themes/prism-tomorrow.css';
 import './post.css';
+import { formatDate } from '../utils';
+import { brandBlack } from '../styleConstants';
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
@@ -26,10 +30,23 @@ export default function Template({ data }) {
         ]}
       />
       <div className="post">
-        <h1 style={{ textTransform: 'capitalize' }}>
-          {post.frontmatter.title}
-        </h1>
+        <h1>{post.frontmatter.title}</h1>
+        <div className="metadata">
+          <h2>{formatDate(post.frontmatter.publicationDate)}</h2>
+          <Link to="/writing">See all posts</Link>
+        </div>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div className="social-links">
+          <ul className="social-icons">
+            {socialIconList.map((Icon, i) => (
+              <li key={i}>
+                <a href={socialIconLinks[i]} target="_blank">
+                  <Icon color={brandBlack} />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

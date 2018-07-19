@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import galamorous from 'glamorous';
 
-import { socialIconList } from '../SocialIcons';
+import { socialIconList, socialIconLinks } from '../SocialIcons';
 
 import { brandGray, brandBlue } from '../../styleConstants';
 
@@ -10,12 +10,6 @@ const activeLinkStyle = {
   borderBottom: `2px solid ${brandBlue}`,
   paddingBottom: 3,
 };
-
-const socialIconLinks = [
-  'https://twitter.com/RyanWillDev',
-  'https://linkedin.com/in/ryanwilldev',
-  'https://github.com/RyanWillDev',
-];
 
 const NavLinks = ({ navIsOpen, closeNav }) => (
   <div className={navIsOpen ? 'nav-links open' : 'nav-links'}>
