@@ -29,9 +29,7 @@ export const PostList = ({ posts }) => (
           {formatDate(node.frontmatter.publicationDate)}
         </span>
 
-        <p style={{ fontSize: '.9rem', margin: '.5rem 0 1rem' }}>
-          {node.frontmatter.description}
-        </p>
+        <p style={{ margin: '.5rem 0 1rem' }}>{node.frontmatter.description}</p>
         <div>
           <span>Tags:</span>
           <ul

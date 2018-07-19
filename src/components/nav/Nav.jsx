@@ -26,6 +26,7 @@ class Nav extends Component {
           }}
         >
           <button
+            aria-label="open nav"
             className="nav__logo"
             style={{
               height: '60px',
@@ -38,10 +39,7 @@ class Nav extends Component {
           >
             <NavLogo navIsOpen={this.state.navIsOpen} />
           </button>
-          <NavLinks
-            closeNav={this.closeNav}
-            navIsOpen={this.state.navIsOpen}
-          />
+          <NavLinks closeNav={this.closeNav} navIsOpen={this.state.navIsOpen} />
         </div>
       </nav>
     );

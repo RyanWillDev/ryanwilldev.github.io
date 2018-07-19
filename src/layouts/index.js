@@ -33,6 +33,7 @@ const Layout = ({ children, data, location }) => (
         },
       ]}
     >
+      <html lang="en" />
       <link
         href="https://fonts.googleapis.com/css?family=Open+Sans"
         rel="stylesheet"
