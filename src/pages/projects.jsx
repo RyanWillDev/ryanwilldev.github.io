@@ -40,7 +40,10 @@ const Projects = () => {
         <ProjectListItem>
           <ProjectContainer>
             <a href="https://www.meetup.com/BoroDev/events/246821738/">
-              <ProjectImage src={BoroDevPWA} />
+              <ProjectImage
+                alt="ryan will speaking about progressive web apps at Boro dev meetup"
+                src={BoroDevPWA}
+              />
             </a>
             <ProjectInfo>
               <ProjectTitle>
@@ -61,7 +64,7 @@ const Projects = () => {
         <ProjectListItem>
           <ProjectContainer>
             <a href="http://ryanwilldev.com/brew-rank/#/">
-              <ProjectImage src={BrewRank} />
+              <ProjectImage alt="brewrank screenshot" src={BrewRank} />
             </a>
             <ProjectInfo>
               <ProjectTitle>

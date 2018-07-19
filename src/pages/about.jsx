@@ -27,7 +27,7 @@ const AboutPage = ({ className }) => (
       RyanWill<span className="callout">Dev</span>
     </h1>
     <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-      <Avatar src={avatar} />
+      <Avatar src={avatar} alt="ryan will" />
       <AlignRight>
         <p>
           Hey there, my name is Ryan Will, but I suspect you already knew that.
