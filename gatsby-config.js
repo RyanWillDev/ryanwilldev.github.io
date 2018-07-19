@@ -9,6 +9,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -26,6 +27,15 @@ module.exports = {
               classPrefix: 'language-',
               inlineCodeMarker: '>',
               aliases: {},
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 960,
+              backgroundColor: '#bcbcbc',
+              wrapperStyle: 'margin: 0 auto 1rem;',
+              showCaptions: true,
             },
           },
         ],

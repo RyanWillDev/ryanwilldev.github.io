@@ -37,7 +37,7 @@ progress {
 template {
   display: none;
 }
-a {
+a:not(.gatsby-resp-image-link) {
   color: #42b4d6;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -51,7 +51,7 @@ a:hover {
 a:focus {
   outline: none;
 }
-a::after {
+a:not(.gatsby-resp-image-link)::after {
   content: '';
   background-color: #42b4d6;
   bottom: 0;
@@ -746,4 +746,13 @@ header {
   .nav-links > ul {
     font-size: 1.25rem;
   }
+}
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+  font-style: italic;
+  opacity: 0.7;
 }
