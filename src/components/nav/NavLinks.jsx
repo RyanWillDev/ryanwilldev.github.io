@@ -2,7 +2,11 @@ import React from 'react';
 import Link from 'gatsby-link';
 import galamorous from 'glamorous';
 
-import { socialIconList, socialIconLinks } from '../SocialIcons';
+import {
+  socialIconList,
+  socialIconLinks,
+  socialIconNames,
+} from '../SocialIcons';
 
 import { brandGray, brandBlue } from '../../styleConstants';
 
@@ -38,7 +42,13 @@ const NavLinks = ({ navIsOpen, closeNav }) => (
     <ul className="social-icons">
       {socialIconList.map((Icon, i) => (
         <li key={i}>
-          <a href={socialIconLinks[i]} target="_blank" onClick={closeNav}>
+          <a
+            href={socialIconLinks[i]}
+            target="_blank"
+            rel="noopener"
+            onClick={closeNav}
+            aria-label={socialIconNames[i]}
+          >
             <Icon color={brandGray} />
           </a>
         </li>

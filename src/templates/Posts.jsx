@@ -2,7 +2,11 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 
-import { socialIconList, socialIconLinks } from '../components/SocialIcons';
+import {
+  socialIconList,
+  socialIconLinks,
+  socialIconNames,
+} from '../components/SocialIcons';
 import 'prismjs/themes/prism-tomorrow.css';
 import './post.css';
 import { formatDate } from '../utils';
@@ -40,7 +44,12 @@ export default function Template({ data }) {
           <ul className="social-icons">
             {socialIconList.map((Icon, i) => (
               <li key={i}>
-                <a href={socialIconLinks[i]} target="_blank">
+                <a
+                  href={socialIconLinks[i]}
+                  target="_blank"
+                  rel="noopener"
+                  aria-label={socialIconNames[i]}
+                >
                   <Icon color={brandBlack} />
                 </a>
               </li>

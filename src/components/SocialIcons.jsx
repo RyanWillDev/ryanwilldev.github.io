@@ -34,3 +34,5 @@ export const socialIconLinks = [
   'https://linkedin.com/in/ryanwilldev',
   'https://github.com/RyanWillDev',
 ];
+
+export const socialIconNames = ['twitter, linked in', 'git hub'];
