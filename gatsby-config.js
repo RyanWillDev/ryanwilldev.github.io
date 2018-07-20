@@ -50,5 +50,18 @@ module.exports = {
         respectDNT: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'RyanWillDev',
+        short_name: 'RyanWillDev',
+        start_url: '/',
+        background_color: '#313233',
+        theme_color: '#313233',
+        display: 'minimal-ui',
+        icon: 'static/pwa_icon.png',
+      },
+    },
+    `gatsby-plugin-offline`, // Must be after manifest so SW can use it
   ],
 };
