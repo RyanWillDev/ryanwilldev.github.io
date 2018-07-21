@@ -750,9 +750,18 @@ header {
 
 figure {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 figcaption {
   font-style: italic;
   opacity: 0.7;
+}
+
+.gatsby-resp-image-wrapper {
+  margin-bottom: 2rem;
+}
+
+figure .gatsby-resp-image-wrapper {
+  margin-bottom: 0.5rem;
 }

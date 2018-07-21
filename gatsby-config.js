@@ -34,7 +34,8 @@ module.exports = {
             options: {
               maxWidth: 960,
               backgroundColor: '#bcbcbc',
-              wrapperStyle: 'margin: 0 auto 1rem;',
+              wrapperStyle:
+                'margin-top: 2rem; margin-left:auto; margin-right: auto;',
               showCaptions: true,
             },
           },
