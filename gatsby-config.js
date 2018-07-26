@@ -58,7 +58,7 @@ module.exports = {
         short_name: 'RyanWillDev',
         start_url: '/',
         background_color: '#313233',
-        theme_color: '#313233',
+        theme_color: '#bcbcbc',
         display: 'minimal-ui',
         icon: 'static/pwa_icon.png',
       },
