@@ -5,6 +5,7 @@ description: ""
 tags: []
 publicationDate: ""
 published: false
+keywords: []
 ---
 
 Like most people, I wasn't quite sure what I wanted to do as a career after high school. Okay, I actually had no idea. All I knew is that stocking shelves overnight at the local grocery store for the rest of eternity was less than ideal. However, it was a good source of motivaton.

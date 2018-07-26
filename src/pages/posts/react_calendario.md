@@ -5,6 +5,7 @@ description: 'Developing a flexible and highly customizable React component that
 tags: ['react', 'JavaScript']
 publicationDate: '2018-06-23'
 published: true
+keywords: ['npm', 'calendar', 'date picker', 'render prop', 'i18n', internationalization']
 ---
 
 While there are plenty of great solutions for creating a date picker or calendar in React already, most have very limited

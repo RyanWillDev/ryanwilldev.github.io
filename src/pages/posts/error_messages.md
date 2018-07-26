@@ -6,6 +6,7 @@ Instead, be curious to find out exactly what the computer is trying to tell you.
 tags: ['development', 'personal experience']
 publicationDate: "2018-07-21"
 published: true
+keywords: ['advice', 'beginner']
 ---
 
 I was thinking recently about how intimidated I was by error messages when I first began to program.

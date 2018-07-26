@@ -5,6 +5,7 @@ description: "How to use the idea of truthy and falsy to write simpler code."
 tags: [ "JavaScript" ]
 publicationDate: "2018-02-10"
 published: true
+keywords: ['truth', 'falsy']
 ---
 
 JavaScript not only has the boolean types `javascript>true` and `javascript>false`, but it also has the idea of truthy and falsy values.

@@ -5,6 +5,7 @@ description: "The web manifest file is the first step on the road to a building 
 tags: ["PWA", "Progressive Web App"]
 publicationDate: "2018-01-04"
 published: true
+keywords: ['manifest', 'json']
 ---
 
 The manifest file is one of the basic building blocks of a Progressive Web App (PWA).

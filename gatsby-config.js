@@ -3,7 +3,7 @@ module.exports = {
     title: 'RyanWillDev | Software Developer',
     description:
       'Software Developer in the Nashville area with a passion for learning, teaching, and creating custom software solutions.',
-    keywords:
+    siteKeywords:
       'nashville, tennessee, software, development, developer, website, custom, blog, web developer, software developer, dickson',
   },
   plugins: [

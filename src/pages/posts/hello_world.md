@@ -5,6 +5,7 @@ description: "The first entry in my journal gives a brief rundown of the technol
 tags: ["vue", "showdownjs", "highlightjs", "node", "JavaScript"]
 publicationDate: "2017-03-06"
 published: true
+keywords: ['blog', 'create']
 ---
 
 Like most developers' personal sites, this has been my playground and has gone through many rewrites.

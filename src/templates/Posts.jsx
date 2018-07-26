@@ -13,7 +13,13 @@ import { formatDate } from '../utils';
 import { brandBlack } from '../styleConstants';
 
 export default function Template({ data }) {
-  const { markdownRemark: post } = data;
+  const {
+    markdownRemark: post,
+    site: {
+      siteMetadata: { siteKeywords },
+    },
+  } = data;
+
   return (
     <div>
       <Helmet
@@ -22,7 +28,14 @@ export default function Template({ data }) {
           { name: 'description', content: post.frontmatter.description },
           {
             name: 'keywords',
-            content: post.frontmatter.tags.join(' ').toLowerCase(),
+            content: siteKeywords
+              .concat(
+                ', ',
+                post.frontmatter.tags
+                  .concat(post.frontmatter.keywords)
+                  .join(', ')
+              )
+              .toLowerCase(),
           },
           { property: 'og:url', content: post.frontmatter.path },
           { property: 'og:description', content: post.frontmatter.description },
@@ -63,6 +76,11 @@ export default function Template({ data }) {
 
 export const pageQuery = graphql`
   query BlogPostsByPath($path: String!) {
+    site {
+      siteMetadata {
+        siteKeywords
+      }
+    }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
@@ -72,6 +90,7 @@ export const pageQuery = graphql`
         description
         tags
         path
+        keywords
       }
     }
   }

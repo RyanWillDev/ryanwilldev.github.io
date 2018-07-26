@@ -5,6 +5,7 @@ description: "A quick write up on how I converted this site from a single page V
 tags: ["vue", "nuxt"]
 publicationDate: "2017-10-31"
 published: true
+keywords: []
 ---
 
 Recently I converted this site from a single page Vue app to a static site generated with Nuxt.

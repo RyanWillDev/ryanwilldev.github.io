@@ -5,6 +5,7 @@ description: "An introduction to Service workers. What they are how they work, a
 tags: ["PWA", "Progressive Web App", "service workers"]
 publicationDate: "2018-01-13"
 published: true
+keywords: ['service', 'worker']
 ---
 
 Service workers are event driven JavaScript files that can be registered as background tasks with the browser.

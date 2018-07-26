@@ -13,7 +13,7 @@ const Layout = ({ children, data, location }) => (
       title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: data.site.siteMetadata.description },
-        { name: 'keywords', content: data.site.siteMetadata.keywords },
+        { name: 'keywords', content: data.site.siteMetadata.siteKeywords },
         { property: 'og:title', content: 'RyanWillDev' },
         { property: 'og:url', content: 'https://ryanwilldev.com' },
         { property: 'og:type', content: 'website' },
@@ -71,7 +71,7 @@ export const query = graphql`
       siteMetadata {
         title
         description
-        keywords
+        siteKeywords
       }
     }
   }

@@ -5,6 +5,7 @@ description: "My impressions of Elm while building the customary To Do applicati
 tags: ["elm", "functional programming"]
 publicationDate: "2017-07-22"
 published: true
+keywords: ['todo']
 ---
 
 I have been interested in functional programming languages, particularly Elm,

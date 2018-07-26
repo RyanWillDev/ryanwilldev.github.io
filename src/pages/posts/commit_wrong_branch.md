@@ -5,6 +5,7 @@ description: "Everyone's made their commits to the wrong branch at least once. H
 tags: ["git", "cli"]
 publicationDate: "2017-09-30"
 published: true
+keywords: ['wrong branch', 'undo git commit', 'commit']
 ---
 
 At [Metova](https://metova.com) we use git flow when making changes to our codebase.

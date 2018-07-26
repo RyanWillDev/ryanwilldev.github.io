@@ -5,6 +5,7 @@ description: "The conditional ternary operator can be a little off putting to so
 tags: ["JavaScript"]
 publicationDate: "2018-02-17"
 published: true
+keywords: ['ternary', 'what', 'is']
 ---
 
 ```javascript
