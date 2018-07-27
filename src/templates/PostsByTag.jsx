@@ -6,6 +6,8 @@ import { formatDate } from '../utils';
 import { PostList } from '../components/PostList';
 
 const PostsByTag = ({ pathContext, data }) => {
+  if (data.allMarkdownRemark == null) return null;
+
   const { tag } = pathContext;
   const { edges, totalCount } = data.allMarkdownRemark;
   const tagHeader = `${totalCount} post${
