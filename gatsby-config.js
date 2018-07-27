@@ -9,12 +9,21 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages/posts`,
         name: 'posts',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static`,
+        name: 'images',
       },
     },
     {
@@ -32,8 +41,8 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 960,
-              backgroundColor: '#bcbcbc',
+              maxWidth: 1040,
+              backgroundColor: 'rgba(49,50,51, 0.3)',
               wrapperStyle:
                 'margin-top: 2rem; margin-left:auto; margin-right: auto;',
               showCaptions: true,

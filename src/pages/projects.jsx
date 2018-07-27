@@ -1,3 +1,4 @@
+import Img from 'gatsby-image';
 import React from 'react';
 import glamorous from 'glamorous';
 
@@ -6,7 +7,7 @@ import BoroDevPWA from '../../static/boro_dev_pwa.jpg';
 import { brandBlack } from '../styleConstants';
 import mediaQueries from '../mediaQueries';
 
-const ProjectImage = glamorous.img({
+const ProjectImage = glamorous.div({
   maxWidth: '350px',
   [mediaQueries.xsmall]: {
     maxWidth: '275px',
@@ -32,7 +33,7 @@ const ProjectInfo = glamorous.div({
 
 const ProjectTitle = glamorous.h3({ marginTop: '1.5rem' });
 
-const Projects = () => {
+const Projects = ({ data: { brewRank, boroDev } }) => {
   return (
     <div>
       <h2>Talks</h2>
@@ -40,10 +41,13 @@ const Projects = () => {
         <ProjectListItem>
           <ProjectContainer>
             <a href="https://www.meetup.com/BoroDev/events/246821738/">
-              <ProjectImage
-                alt="ryan will speaking about progressive web apps at Boro dev meetup"
-                src={BoroDevPWA}
-              />
+              <ProjectImage alt="ryan will speaking about progressive web apps at Boro dev meetup">
+                <Img
+                  alt="Ryan Will speaking about progressive web apps at Boro dev meetup"
+                  resolutions={boroDev.resolutions}
+                  title="ryan will speaking about progressive web apps at Boro dev meetup"
+                />
+              </ProjectImage>
             </a>
             <ProjectInfo>
               <ProjectTitle>
@@ -64,7 +68,13 @@ const Projects = () => {
         <ProjectListItem>
           <ProjectContainer>
             <a href="http://ryanwilldev.com/brew-rank/#/">
-              <ProjectImage alt="brewrank screenshot" src={BrewRank} />
+              <ProjectImage>
+                <Img
+                  resolutions={brewRank.resolutions}
+                  alt="brewrank screenshot"
+                  title="screen shot of brew rank application's dashboard"
+                />
+              </ProjectImage>
             </a>
             <ProjectInfo>
               <ProjectTitle>
@@ -82,3 +92,18 @@ const Projects = () => {
 };
 
 export default Projects;
+
+export const pageQuery = graphql`
+  query ProjectImagesQuery {
+    brewRank: imageSharp(id: { regex: "/BrewRank/" }) {
+      resolutions(width: 350) {
+        ...GatsbyImageSharpResolutions
+      }
+    }
+    boroDev: imageSharp(id: { regex: "/boro_dev_pwa/" }) {
+      resolutions(width: 350) {
+        ...GatsbyImageSharpResolutions
+      }
+    }
+  }
+`;

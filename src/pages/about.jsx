@@ -1,11 +1,14 @@
+import Img from 'gatsby-image';
 import React from 'react';
 import glamorous from 'glamorous';
+import { brandBlack } from '../styleConstants';
 
-import avatar from '../../static/avatar.png';
-import { brandGray, brandBlue, brandBlack } from '../styleConstants';
-
-const Avatar = glamorous.img({
-  maxHeight: '335px',
+const Avatar = glamorous.div({
+  maxHeight: 335,
+  maxWidth: 350,
+  heigth: '100%',
+  width: '100%',
+  position: 'relative',
   paddingRight: '2rem',
   marginBottom: '1rem',
   '@media screen and (max-width:950px)': {
@@ -21,13 +24,20 @@ const AlignRight = glamorous.div({
   },
 });
 
-const AboutPage = ({ className }) => (
+const AboutPage = ({ data: { avatar } }) => (
   <div>
     <h1>
       RyanWill<span className="callout">Dev</span>
     </h1>
     <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-      <Avatar src={avatar} alt="ryan will" />
+      <Avatar>
+        <Img
+          title="Ryan Will"
+          alt="An avatar of Ryan Will"
+          sizes={avatar.sizes}
+          backgroundColor="rgba(49,50,51, 0.4)"
+        />
+      </Avatar>
       <AlignRight>
         <p>
           Hey there, my name is Ryan Will, but I suspect you already knew that.
@@ -57,3 +67,13 @@ const AboutPage = ({ className }) => (
 );
 
 export default AboutPage;
+
+export const pageQuery = graphql`
+  query AvatarImageQuery {
+    avatar: imageSharp(id: { regex: "/avatar/" }) {
+      sizes(maxWidth: 350) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+  }
+`;

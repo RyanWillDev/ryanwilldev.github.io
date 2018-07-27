@@ -49,7 +49,7 @@ const Layout = ({ children, data, location }) => (
       style={{
         color: brandBlack,
         margin: '150px auto 0',
-        maxWidth: 960,
+        maxWidth: 1040,
         padding: '0px 1.0875rem 1.45rem',
         paddingTop: 0,
       }}
