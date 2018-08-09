@@ -58,9 +58,8 @@ const AboutPage = ({ data: { avatar } }) => (
         enjoy giving back to the community by teaching others and helping them
         solve their problems. Whether through blog posts, giving talks, or
         answering questions in community Slack groups, it is very rewarding to
-        be able to pass along the knowledge I have gained and the good will I
-        have recieved to people that are on the path to becoming software
-        developers.
+        pass along the knowledge I have gained and the good will I have recieved
+        to others on the path to becoming software developers.
       </p>
     </div>
   </div>
