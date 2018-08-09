@@ -2,16 +2,12 @@ import Img from 'gatsby-image';
 import React from 'react';
 import glamorous from 'glamorous';
 
-import BrewRank from '../../static/BrewRank.png';
-import BoroDevPWA from '../../static/boro_dev_pwa.jpg';
-import { brandBlack } from '../styleConstants';
-import mediaQueries from '../mediaQueries';
+import { brandGray } from '../styleConstants';
 
-const ProjectImage = glamorous.div({
-  maxWidth: '350px',
-  [mediaQueries.xsmall]: {
-    maxWidth: '275px',
-  },
+const Heading = glamorous.h2({
+  backgroundColor: brandGray,
+  marginBottom: 40,
+  padding: '0.5rem 2rem 0.5rem 0.5rem',
 });
 
 const ProjectContainer = glamorous.div({
@@ -20,8 +16,11 @@ const ProjectContainer = glamorous.div({
   justifyContent: 'space-between',
 });
 
+const ProjectList = glamorous.ul({
+  marginBottom: 88,
+});
+
 const ProjectListItem = glamorous.li({
-  borderBottom: `1px solid ${brandBlack}`,
   marginBottom: '2rem',
   paddingBottom: '1.5rem',
 });
@@ -36,18 +35,16 @@ const ProjectTitle = glamorous.h3({ marginTop: '1.5rem' });
 const Projects = ({ data: { brewRank, boroDev } }) => {
   return (
     <div>
-      <h2>Talks</h2>
-      <ul>
+      <Heading>Talks</Heading>
+      <ProjectList>
         <ProjectListItem>
           <ProjectContainer>
             <a href="https://www.meetup.com/BoroDev/events/246821738/">
-              <ProjectImage alt="ryan will speaking about progressive web apps at Boro dev meetup">
-                <Img
-                  alt="Ryan Will speaking about progressive web apps at Boro dev meetup"
-                  resolutions={boroDev.resolutions}
-                  title="ryan will speaking about progressive web apps at Boro dev meetup"
-                />
-              </ProjectImage>
+              <Img
+                alt="Ryan Will speaking about progressive web apps at Boro dev meetup"
+                resolutions={boroDev.resolutions}
+                title="ryan will speaking about progressive web apps at Boro dev meetup"
+              />
             </a>
             <ProjectInfo>
               <ProjectTitle>
@@ -61,20 +58,18 @@ const Projects = ({ data: { brewRank, boroDev } }) => {
             </ProjectInfo>
           </ProjectContainer>
         </ProjectListItem>
-      </ul>
+      </ProjectList>
 
-      <h2>Work</h2>
-      <ul>
+      <Heading>Work</Heading>
+      <ProjectList>
         <ProjectListItem>
           <ProjectContainer>
             <a href="http://ryanwilldev.com/brew-rank/#/">
-              <ProjectImage>
-                <Img
-                  resolutions={brewRank.resolutions}
-                  alt="brewrank screenshot"
-                  title="screen shot of brew rank application's dashboard"
-                />
-              </ProjectImage>
+              <Img
+                resolutions={brewRank.resolutions}
+                alt="brewrank screenshot"
+                title="screen shot of brew rank application's dashboard"
+              />
             </a>
             <ProjectInfo>
               <ProjectTitle>
@@ -86,7 +81,7 @@ const Projects = ({ data: { brewRank, boroDev } }) => {
             </ProjectInfo>
           </ProjectContainer>
         </ProjectListItem>
-      </ul>
+      </ProjectList>
     </div>
   );
 };
