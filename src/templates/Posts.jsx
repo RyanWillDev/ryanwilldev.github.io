@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import glamorous from 'glamorous';
 import Link from 'gatsby-link';
 
 import {
@@ -11,6 +12,10 @@ import 'prismjs/themes/prism-tomorrow.css';
 import './post.css';
 import { formatDate } from '../utils';
 import { brandBlack } from '../styleConstants';
+
+const Date = glamorous.h2({
+  fontSize: 16,
+});
 
 export default function Template({ data }) {
   const {
@@ -49,7 +54,7 @@ export default function Template({ data }) {
       <div className="post">
         <h1>{post.frontmatter.title}</h1>
         <div className="metadata">
-          <h2>{formatDate(post.frontmatter.publicationDate)}</h2>
+          <Date>{formatDate(post.frontmatter.publicationDate)}</Date>
           <Link to="/writing">See all posts</Link>
         </div>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
