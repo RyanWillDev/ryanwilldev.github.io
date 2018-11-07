@@ -37,7 +37,7 @@ These events include lifecycle events (install, activate, and download) for the 
 Registering an event in the service worker should look like pretty standard JavaScript.
 
 Here is a very simple example of registering an event to watch for the service worker's install event which is called every time a new service worker is
-downloaded by the brower.
+downloaded by the browser.
 Self in the snippet below references the service worker.
 
 ```javascript
@@ -61,7 +61,7 @@ This is a technique known as pre-caching the app shell.
 
 ## Working in the background
 
-Since service workers run as background tasks separate from the thread your nomral JavaScript runs in, they are able to listen and respond to events even when
+Since service workers run as background tasks separate from the thread your normal JavaScript runs in, they are able to listen and respond to events even when
 the browser is not open.
 
-This enables features such as background sync and push notifications, which allow developers to create more resilent and immersive UIs.
+This enables features such as background sync and push notifications, which allow developers to create more resilient and immersive UIs.

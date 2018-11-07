@@ -19,19 +19,19 @@ Below is a very basic example.
 
 ## Customization
 
-react-calendario takes advantange of the powerful [Render Prop](https://reactjs.org/docs/render-props.html) pattern allowing the consumer to customize and style the calendar or date picker however they like.
+react-calendario takes advantage of the powerful [Render Prop](https://reactjs.org/docs/render-props.html) pattern allowing the consumer to customize and style the calendar or date picker however they like.
 Unlike passing configuration props to traditional components or the Higher Order Component pattern the Render Prop pattern
 allows the consumer of the component to customize and style the JSX returned by a component however they like.
 
 react-calendario expects a function that returns JSX either as a prop named render or as its only child.
-react-calendario calls the provided funcion in its own render method passing to it all the necessary logic to create the
+react-calendario calls the provided function in its own render method passing to it all the necessary logic to create the
 calendar or date picker component as arguments.
 
 You can read more about the arguments passed to the function [here](https://github.com/RyanWillDev/react-calendario#render-function-props).
 
 ## Internationalization
 
-I am particulary excited about react-calendario's support for Internationalization.
+I am particularly excited about react-calendario's support for Internationalization.
 Using the [Intl.DateTimeFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat)
 API react-calendario can support all the languages supported by a user's browser.
 To configure the language react-calendario will use just pass a supported browser language code as the language prop.

@@ -12,7 +12,7 @@ The manifest file is one of the basic building blocks of a Progressive Web App (
 It is a simple JSON file stored in the root of your server's web directory that lists properties of your app, including the name, icons and theme colors, orientation of the app, and much more.
 
 Along with the other technologies, the manifest file allows you to create a web app with performance and experience that rivals that of native apps.
-Users will be able to install the app on the device's home screen directly from the web, use the app when offline, and recieve push notifications.
+Users will be able to install the app on the device's home screen directly from the web, use the app when offline, and receive push notifications.
 This will allow companies to focus on building a single app that provides a great experience for web and native users.
 
 ## Browser Support

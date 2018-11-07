@@ -5,5 +5,5 @@ description: "What is this? No, seriously what is it? If you've spent any time w
 tags: ["JavaScript", "beginner breakdown"]
 publicationDate: "2018-08-01"
 published: false
-keywords: []
+keywords: ['this', 'keyword', 'context', 'object', 'scope']
 ---

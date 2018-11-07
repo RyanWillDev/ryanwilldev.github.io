@@ -43,7 +43,7 @@ export default function({ route, redirect }) {
 }
 ```
 
-Another convienent configuration available in the Nuxt config is the head property.
+Another convenient configuration available in the Nuxt config is the head property.
 The head property allows you to define the default meta properties for you app.
 This can be used in combination with the head method Nuxt adds to your components to very simply update the meta tags per page.
 I use this technique to update the Open Graph meta tags on my journal entries.

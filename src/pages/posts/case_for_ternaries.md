@@ -91,7 +91,7 @@ someFunctionCall(someCondition ? 4 : 42);
 
 ## Returning expressions from functions
 
-The most benefical place to use a ternary is in the return expression of a function.
+The most beneficial place to use a ternary is in the return expression of a function.
 The reason being that it helps you avoid errors.
 
 What is the potential error in the following example?
@@ -109,7 +109,7 @@ This is because all functions in JavaScript return `javascript>undefined` unless
 That is the `javascript>return` keyword with an expression afterward.
 
 So, the issue here is that there is an if statement but no else case.
-This is percisely why a ternary is so handy when conditionally returning a value from a function.
+This is precisely why a ternary is so handy when conditionally returning a value from a function.
 
 Remember, a ternary is made up of 3 parts.
 It needs all of those parts to be a valid expression.
