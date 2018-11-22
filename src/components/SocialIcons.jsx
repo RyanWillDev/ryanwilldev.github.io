@@ -30,9 +30,9 @@ export const Github = ({ color }) => (
 export const socialIconList = [Twitter, LinkedIn, Github];
 
 export const socialIconLinks = [
-  'https://twitter.com/RyanWillDev',
-  'https://linkedin.com/in/ryanwilldev',
-  'https://github.com/RyanWillDev',
+  'https://twitter.com/RyanWillCode',
+  'https://linkedin.com/in/ryanwillcode',
+  'https://github.com/RyanWillCode',
 ];
 
 export const socialIconNames = ['twitter', 'linked in', 'git hub'];
