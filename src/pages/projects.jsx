@@ -32,7 +32,7 @@ const ProjectInfo = glamorous.div({
 
 const ProjectTitle = glamorous.h3({ marginTop: '1.5rem' });
 
-const Projects = ({ data: { brewRank, boroDev } }) => {
+const Projects = ({ data: { wrm, boroDev } }) => {
   return (
     <div>
       <Heading>Talks</Heading>
@@ -64,19 +64,21 @@ const Projects = ({ data: { brewRank, boroDev } }) => {
       <ProjectList>
         <ProjectListItem>
           <ProjectContainer>
-            <a href="http://ryanwilldev.com/brew-rank/#/">
+            <a href="https://www.who-reps.me">
               <Img
-                resolutions={brewRank.resolutions}
-                alt="brewrank screenshot"
-                title="screen shot of brew rank application's dashboard"
+                resolutions={wrm.resolutions}
+                alt="Who Reps Me screenshot"
+                title="Image of capital building for Who Reps Me"
               />
             </a>
             <ProjectInfo>
               <ProjectTitle>
-                <a href="http://ryanwilldev.com/brew-rank/#/">BrewRank</a>
+                <a href="https://www.who-reps.me">WhoRepsMe</a>
               </ProjectTitle>
               <p>
-                An app for brew pubs to track the user ratings of their brews.
+                An application to find your representatives and details on their
+                voting history. The tech stack includes Elixir, Phoenix, and
+                LitElement.
               </p>
             </ProjectInfo>
           </ProjectContainer>
@@ -90,13 +92,13 @@ export default Projects;
 
 export const pageQuery = graphql`
   query ProjectImagesQuery {
-    brewRank: imageSharp(id: { regex: "/BrewRank/" }) {
-      resolutions(width: 350) {
+    wrm: imageSharp(id: { regex: "/wrm/" }) {
+      resolutions(width: 320) {
         ...GatsbyImageSharpResolutions
       }
     }
     boroDev: imageSharp(id: { regex: "/boro_dev_pwa/" }) {
-      resolutions(width: 350) {
+      resolutions(width: 320) {
         ...GatsbyImageSharpResolutions
       }
     }
