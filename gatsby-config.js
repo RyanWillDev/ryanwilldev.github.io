@@ -73,5 +73,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`, // Must be after manifest so SW can use it
+    `gatsby-plugin-netlify`,
   ],
 };

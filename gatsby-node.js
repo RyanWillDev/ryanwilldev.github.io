@@ -14,6 +14,13 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   const blogPostTemplate = path.resolve(`src/templates/Posts.jsx`);
   const postsByTag = path.resolve(`src/templates/PostsByTag.jsx`);
 
+  boundActionCreators.createRedirect({
+    fromPath: `/`,
+    isPermanent: true,
+    redirectInBrowser: true,
+    toPath: `/about`,
+  });
+
   return graphql(`
     {
       allMarkdownRemark {
