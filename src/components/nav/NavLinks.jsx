@@ -15,26 +15,21 @@ const activeLinkStyle = {
   paddingBottom: 3,
 };
 
-const NavLinks = ({ navIsOpen, closeNav }) => (
+const NavLinks = ({ navIsOpen }) => (
   <div className={navIsOpen ? 'nav-links open' : 'nav-links'}>
     <ul>
       <li>
-        <Link exact onClick={closeNav} activeStyle={activeLinkStyle} to="/">
-          Home
-        </Link>
-      </li>
-      <li>
-        <Link onClick={closeNav} activeStyle={activeLinkStyle} to="/about">
+        <Link activeStyle={activeLinkStyle} to="/about">
           About
         </Link>
       </li>
       <li>
-        <Link onClick={closeNav} activeStyle={activeLinkStyle} to="/writing">
+        <Link activeStyle={activeLinkStyle} to="/writing">
           Writing
         </Link>
       </li>
       <li>
-        <Link onClick={closeNav} activeStyle={activeLinkStyle} to="/projects">
+        <Link activeStyle={activeLinkStyle} to="/projects">
           Projects
         </Link>
       </li>
@@ -46,7 +41,6 @@ const NavLinks = ({ navIsOpen, closeNav }) => (
             href={socialIconLinks[i]}
             target="_blank"
             rel="noopener"
-            onClick={closeNav}
             aria-label={socialIconNames[i]}
           >
             <Icon color={brandGray} />

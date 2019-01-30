@@ -4,6 +4,7 @@ import Link from 'gatsby-link';
 
 import NavLogo from './NavLogo';
 import NavLinks from './NavLinks';
+import { MenuIcon } from './MenuIcon';
 
 class Nav extends Component {
   constructor() {
@@ -11,8 +12,11 @@ class Nav extends Component {
     this.state = { navIsOpen: false };
   }
 
-  closeNav = () => {
-    this.setState({ navIsOpen: false });
+  toggleNav = () => {
+    console.log('toggle');
+    this.setState(state => ({
+      navIsOpen: !state.navIsOpen,
+    }));
   };
 
   render() {
@@ -25,22 +29,26 @@ class Nav extends Component {
             width: '100%',
           }}
         >
-          <button
+          <div
             aria-label="open nav"
             className="nav__logo"
             style={{
               height: '60px',
               marginLeft: '16px',
+              marginRight: 'auto',
               width: '125px',
             }}
-            onClick={e => {
-              this.setState(state => ({ navIsOpen: !state.navIsOpen }));
-            }}
           >
-            <NavLogo navIsOpen={this.state.navIsOpen} />
-          </button>
-          <NavLinks closeNav={this.closeNav} navIsOpen={this.state.navIsOpen} />
+            <NavLogo />
+          </div>
+          <NavLinks navIsOpen={this.state.navIsOpen} />
         </div>
+        <button
+          style={{ position: 'absolute', top: 12, right: 22, padding: 8 }}
+          onClick={this.toggleNav}
+        >
+          <MenuIcon />
+        </button>
       </nav>
     );
   }
