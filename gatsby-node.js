@@ -7,8 +7,12 @@
 // You can delete this file if you're not using it
 
 const path = require('path');
+const fs = require('fs');
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
+  if (process.env.NODE_ENV !== 'development') {
+    fs.closeSync(fs.openSync('./public/webpack.stats.json', 'w'));
+  }
   const { createPage } = boundActionCreators;
 
   const blogPostTemplate = path.resolve(`src/templates/Posts.jsx`);
