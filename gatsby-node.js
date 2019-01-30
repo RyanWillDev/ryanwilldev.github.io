@@ -11,7 +11,7 @@ const fs = require('fs');
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
   if (process.env.NODE_ENV !== 'development') {
-    fs.closeSync(fs.openSync('./public/webpack.stats.json', 'w'));
+    fs.writeFileSync('./public/webpack.stats.json', '{}');
   }
   const { createPage } = boundActionCreators;
 
