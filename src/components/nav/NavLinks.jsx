@@ -33,6 +33,9 @@ const NavLinks = ({ navIsOpen }) => (
           Projects
         </Link>
       </li>
+      <li>
+        <Link to="https://til.ryanwilldev.com">TIL</Link>
+      </li>
     </ul>
     <ul className="social-icons">
       {socialIconList.map((Icon, i) => (
