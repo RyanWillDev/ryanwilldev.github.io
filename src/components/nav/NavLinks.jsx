@@ -34,7 +34,7 @@ const NavLinks = ({ navIsOpen }) => (
         </Link>
       </li>
       <li>
-        <Link to="https://til.ryanwilldev.com">TIL</Link>
+        <a href="https://til.ryanwilldev.com">TIL</a>
       </li>
     </ul>
     <ul className="social-icons">
