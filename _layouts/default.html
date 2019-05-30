@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include metahead.html %}
+  </head>
+  <body>
+    {% include header.html %}
+
+    <section class="content">
+      <!-- prettier-ignore -->
+      {% if page.heading %} {% include page_heading.html
+      heading=page.page_heading callout=page.page_heading_callout %} {% endif %}
+      {{ content }}
+    </section>
+
+    <script src="/assets/js/nav.js"></script>
+  </body>
+</html>

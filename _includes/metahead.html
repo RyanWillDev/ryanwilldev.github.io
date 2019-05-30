@@ -1,0 +1,55 @@
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/assets/css/app.css" />
+  <link rel="icon" type="image/x-icon" href="/assets/img/logo.png" />
+  <link rel="canonical" href="https://ryanwilldev.com{{ page.url }}" />
+
+  <!-- Facebook -->
+  <meta
+    property="og:title"
+    content="{{ page.title | default: site.metadata.title }}"
+  />
+  <meta property="og:url" content="https://ryanwilldev.com{{page.url}}" />
+  <meta property="og:image" content="/assets/img/logo.png" />
+  <meta property="og:image:width" content="1200"></meta>
+  <meta property="og:image:height" content="630" />
+  <meta
+    property="og:description"
+    content="{{ page.description
+| default: site.metadata.description }}"
+  />
+  {% if page.path contains '_posts' %}
+  <meta property="og:type" content="article" />
+  <meta property="og:article:tag" content="{{ page.tags | join: ' ' }}" />
+  {% else %}
+  <meta property="og:type" content="website" />
+  {% endif %}
+
+
+  <!-- Twitter -->
+  <meta name="twitter:creator" content="@RyanWillDec"></meta>
+  <meta name="twitter:card" content="summary_large_image"></meta>
+  <meta name="twitter:image" content="/assets/img/logo.png" />
+  <meta
+    name="twitter:description"
+    content="{{ page.description
+| default: site.metadata.description }}"
+  />
+
+  <title>RyanWillDev |> {{ page.title | default: site.metadata.title }}</title>
+  <meta
+    name="keywords"
+    content="{{ page.tags | join: ',' }},{{ page.keywords | join: ','}},{{ site.metadata.keywords }}"
+  />
+  <meta
+    name="description"
+    content="RyanWillDev |> {{ page.description
+| default: site.metadata.description }}"
+  />
+</html>

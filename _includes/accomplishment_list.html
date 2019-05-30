@@ -1,0 +1,23 @@
+<ul>
+  {% for item in include.list %}
+  <li class="talk">
+    <div class="talk__metadata">
+      {% if item.external_link %}
+      <h2><a href="{{item.external_link}}">{{ item.title }}</a></h2>
+      {% else %}
+      <h2>{{ item.title }}</h2>
+      {% endif %} {% if item.date %}
+      <span>{{ item.date | date: "%B %d, %Y" }}</span>
+      {% elsif item.subtitle %}
+      <span>{{ item.subtitle }}</span>
+      {% endif %}
+    </div>
+    <div class="talk__right">
+      <div class="talk__image">
+        <img src="{{ talk.image_url }}" alt="{{ talk.image_alt }}" />
+      </div>
+      <p class="talk__description">{{ item.description }}</p>
+    </div>
+  </li>
+  {% endfor %}
+</ul>

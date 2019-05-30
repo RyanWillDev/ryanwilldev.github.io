@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include metahead.html %}
+  </head>
+  <body>
+    {% include header.html %}
+
+    <section class="post">
+      <section class="content">
+        {% include page_heading.html heading=page.title titleize=true %}
+
+        <div class="metadata">
+          <h2 class="date">{{ page.date | date: "%B %d, %Y" }}</h2>
+          <a href="/">See all posts</a>
+        </div>
+        <section class="post-body">
+          {{content}}
+        </section>
+        <nav class="post-footer">
+          {% include social_links.html %}
+        </nav>
+      </section>
+    </section>
+
+    <script src="/assets/js/nav.js"></script>
+  </body>
+</html>

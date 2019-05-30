@@ -1,0 +1,13 @@
+<!-- prettier-ignore -->
+<h1 class="page-heading">
+  {% if include.titleize == true %} 
+    {{ include.heading | default: "RyanWill"| titleize }}<span class="page-heading-callout"
+                                                               >{{ include.callout | default: "" }}</span>
+  {% endif %} 
+  
+  {% if include.titleize != true %} 
+    {{ include.heading | default: "RyanWill" }}<span class="page-heading-callout"
+                                                     >{{ include.callout | default: "" }}</span>
+ 
+  {% endif %}
+</h1>

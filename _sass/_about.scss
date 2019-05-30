@@ -1,0 +1,42 @@
+.about {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include breakpoint($medium) {
+    flex-wrap: no-wrap;
+  }
+
+  .avatar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    width: 100%;
+
+    @include breakpoint($medium) {
+      align-self: flex-end;
+      margin-bottom: 16px;
+      width: 350px;
+    }
+
+    .avatar {
+      max-height: 335px;
+      max-width: 350px;
+    }
+  }
+
+  .right {
+    @include breakpoint($medium) {
+      align-self: flex-end;
+      width: 60%;
+    }
+  }
+
+  p {
+    padding: 0 16px;
+    margin-bottom: 24px;
+
+    &:last-of-type {
+      margin-top: 0;
+    }
+  }
+}

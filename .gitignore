@@ -1,11 +1,5 @@
 .DS_Store
-node_modules/
-npm-debug.log
-vue.md
-journal/journal.json
-journal/drafts/*
-.nuxt
 .cache/
 .vscode/
-public/
-drafts/
+_site/
+.sass_cache/

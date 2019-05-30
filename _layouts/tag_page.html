@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include metahead.html %}
+  </head>
+  <body>
+    {% include header.html %} {% assign heading = page.tag | append: " posts" %}
+
+    <section class="content">
+      {% include page_heading.html heading=heading titleize=true %}
+      <div style="text-align: right; margin-bottom: 40px;">
+        <a href="/">See all posts</a>
+      </div>
+
+      {% include post_list.html filtered=true %}
+    </section>
+    <script src="/assets/js/nav.js"></script>
+  </body>
+</html>

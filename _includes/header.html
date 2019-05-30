@@ -1,0 +1,50 @@
+<header>
+  <nav class="nav">
+    <div class="nav__logo">
+      <a href="/">
+        {% include nav_logo.html %}
+      </a>
+    </div>
+
+    <div class="nav__menu">
+      <button>
+        {% include menu_icon.html %}
+      </button>
+    </div>
+  </nav>
+
+  <nav class="nav-links">
+    <ul class="nav-links__pages">
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a href="/talks">Talks</a>
+      </li>
+      <li>
+        <a href="/projects">Projects</a>
+      </li>
+      <li>
+        <a href="https://til.ryanwilldev.com">TIL</a>
+      </li>
+    </ul>
+
+    {% include social_links.html %}
+    <!--
+      <ul className="social-icons">
+        {socialIconList.map((Icon, i) => (
+        <li key="{i}">
+          <a
+            href="{socialIconLinks[i]}"
+            target="_blank"
+            rel="noopener"
+            aria-label="{socialIconNames[i]}"
+          >
+            <Icon color="{brandGray}" />
+          </a>
+        </li>
+        ))}
+      </ul>
+      -->
+  </nav>
+</header>

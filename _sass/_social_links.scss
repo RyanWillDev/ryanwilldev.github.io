@@ -1,0 +1,12 @@
+.social-links {
+  display: flex;
+  justify-content: space-between;
+
+  .icon-container {
+    width: 30px;
+
+    svg {
+      width: 100%;
+    }
+  }
+}

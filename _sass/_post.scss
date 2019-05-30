@@ -1,0 +1,42 @@
+.post {
+  .metadata {
+    align-content: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    width: 100%;
+
+    .date {
+      display: inline-block;
+      font-size: 1em;
+      margin: 0;
+    }
+  }
+
+  h2:not(.date) {
+    margin: 56px 0 8px 0;
+    text-transform: capitalize;
+  }
+
+  .image-container {
+    margin: 40px auto;
+
+    @include breakpoint($small) {
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .post-body {
+    margin-bottom: 64px;
+  }
+
+  .post-footer {
+    background-color: $silver;
+    padding: 12px 16px;
+  }
+}

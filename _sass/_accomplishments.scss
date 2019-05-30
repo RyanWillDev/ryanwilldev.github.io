@@ -1,0 +1,38 @@
+.accomplishment {
+  &__heading {
+    margin-bottom: 24px;
+
+    h2 {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__image {
+    margin: 0 auto;
+    display: inline-block;
+    max-width: 320px;
+    min-width: 320px;
+
+    @include breakpoint($medium) {
+      margin: 0 32px 0 0;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include breakpoint($medium) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__description {
+    padding: 0 16px;
+    //width: 50%;
+  }
+}

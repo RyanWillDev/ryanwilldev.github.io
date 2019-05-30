@@ -1,0 +1,26 @@
+defaults:
+  -
+    scope:
+      path: "_posts"
+    values:
+      layout: "post"
+highlighter: rouge
+kramdown:
+  input: GFM
+markdown: kramdown
+metadata:
+  title: 'Software Developer'
+  description:
+     'Software Developer in the Nashville area with a passion for learning, teaching,
+     and creating custom software solutions.'
+  keywords:
+     'nashville, tennessee, software, development, developer, website, custom, blog, web developer,
+     software developer, dickson'
+permalink: "/writing/:title"
+responsive_image:
+  template: _includes/responsive_image.html
+sass:
+  sass_dir: _sass
+  style: compressed
+tag_page_layout: tag_page
+tag_page_dir: tag

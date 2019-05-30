@@ -1,0 +1,91 @@
+body {
+  background-color: #f7f7f7;
+  color: $black;
+  font-family: 'Roboto', sans-serif;
+  font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  -moz-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  font-kerning: normal;
+  font-size: 18px;
+  font-weight: normal;
+  word-wrap: break-word;
+}
+
+button {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  line-height: 24px;
+}
+
+a {
+  color: $blue;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+
+  &::after {
+    content: '';
+    background-color: $blue;
+    bottom: 0;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+  }
+
+  &:not(.active):hover::after,
+  &:not(.active):focus::after {
+    transform: scaleX(1);
+  }
+
+  &::visited {
+    color: $blue;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.highlighter-rouge {
+  margin: 24px 0;
+}
+
+pre {
+  border-radius: 5px;
+  overflow-x: scroll;
+  padding: 16px;
+}
+
+// Syntax theme doesn't work with inline highlighting
+code.highlighter-rouge {
+  background-color: #272822;
+  border-radius: 3px;
+  color: #f8f8f2;
+  margin: 0 3px;
+  padding: 0 3px;
+}
+
+// Shell code is not parsed properly
+.language-shell code {
+  color: $silver;
+}

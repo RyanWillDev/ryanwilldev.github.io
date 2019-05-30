@@ -1,0 +1,21 @@
+.posts {
+  .post {
+    border-bottom: 1px solid $silver;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+
+    &__title {
+      display: block;
+      margin-bottom: 16px;
+    }
+
+    &__tags {
+      display: flex;
+      flex-wrap: wrap;
+
+      &__tag {
+        margin: 8px 8px 8px 0;
+      }
+    }
+  }
+}

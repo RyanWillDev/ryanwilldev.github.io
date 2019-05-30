@@ -1,0 +1,30 @@
+<ul>
+  {% for item in include.list %}
+  <li class="accomplishment">
+    <div class="accomplishment__heading">
+      {% if item.external_link %}
+      <h2>
+        <a target="_blank" rel="noopener" href="{{item.external_link}}"
+          >{{ item.title }}</a
+        >
+      </h2>
+      {% else %}
+      <h2>{{ item.title }}</h2>
+      {% endif %} {% if item.date %}
+      <span>{{ item.date | date: "%B %d, %Y" }}</span>
+      {% elsif item.subtitle %}
+      <span>{{ item.subtitle }}</span>
+      {% endif %}
+    </div>
+    <div class="accomplishment__right">
+      <div class="accomplishment__image">
+        <img
+          src="/assets/img/{{ item.image_url }}"
+          alt="{{ items.image_alt }}"
+        />
+      </div>
+      <p class="accomplishment__description">{{ item.description }}</p>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
