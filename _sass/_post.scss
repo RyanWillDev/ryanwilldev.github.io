@@ -2,14 +2,48 @@
   .metadata {
     align-content: flex-start;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 40px;
     width: 100%;
 
-    .date {
-      display: inline-block;
-      font-size: 1em;
-      margin: 0;
+    .top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 32px;
+      width: 100%;
+
+      .date {
+        display: inline-block;
+        font-size: 1em;
+        margin: 0;
+      }
+    }
+
+    .series-list {
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+
+      ul {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+
+        a {
+          background-color: $silver;
+          border-radius: 100%;
+          display: block;
+          height: 18px;
+          margin-right: 12px;
+          padding: 4px;
+          width: 18px;
+
+          &.active {
+            background-color: $black;
+          }
+        }
+      }
     }
   }
 

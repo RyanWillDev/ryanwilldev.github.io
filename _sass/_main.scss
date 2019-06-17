@@ -48,8 +48,7 @@ a {
     width: 100%;
   }
 
-  &:not(.active):hover::after,
-  &:not(.active):focus::after {
+  &:not(.active):not(.post-link):hover::after {
     transform: scaleX(1);
   }
 
