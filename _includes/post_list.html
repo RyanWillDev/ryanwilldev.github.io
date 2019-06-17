@@ -10,7 +10,8 @@
   <li class="post">
     
     <h2 class="post__title">
-      <a href="{{ post.url }}">{{ post.title | titleize }}</a>
+      <a href="{{ post.url }}">{{ post.title | titleize }}
+        {{post.series_subtitle | default: '' | titleize}}</a>
     </h2>
     
     <span>{{ post.date | date: "%B %d, %Y" }}</span>

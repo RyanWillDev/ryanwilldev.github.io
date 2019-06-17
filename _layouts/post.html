@@ -10,13 +10,17 @@
     <section class="post">
       <section class="content">
         {% include page_heading.html heading=page.title titleize=true %}
-
         <div class="metadata">
           <div class="top">
             <h2 class="date">{{ page.date | date: "%B %d, %Y" }}</h2>
             <a href="/">See all posts</a>
           </div>
-          {% if page.series %} {% include series_list.html %} {% endif %}
+          {% if page.series %} 
+            {% if page.series_subtitle %}
+              <h2 class="series-subtitle">{{ page.series_subtitle }}</h2>
+            {% endif %}
+            {% include series_list.html %} 
+          {% endif %}
         </div>
         <section class="post-body">
           {{content}}
