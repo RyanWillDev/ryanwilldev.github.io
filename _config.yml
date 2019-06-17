@@ -4,6 +4,12 @@ defaults:
       path: "_posts"
     values:
       layout: "post"
+  -
+    scope:
+      path: "_drafts"
+    values:
+      layout: "post"
+
 highlighter: rouge
 kramdown:
   input: GFM
