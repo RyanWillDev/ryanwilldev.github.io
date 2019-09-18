@@ -1,0 +1,16 @@
+{% if page.footnotes%}
+<hr>
+
+<ul>
+  {% for footnote in page.footnotes %}
+  <li>
+    <span>{{ forloop.index }}.</span>
+    {% if footnote.link %}
+    <a id="fn:{{forloop.index}}" href="{{footnote.link}}">{{footnote.text}}</a>
+    {% else %}
+    <p>{{footnote.text}}</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
