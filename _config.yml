@@ -20,8 +20,7 @@ metadata:
      'Software Developer in the Nashville area with a passion for learning, teaching,
      and creating custom software solutions.'
   keywords:
-     'nashville, tennessee, software, development, developer, website, custom, blog, web developer,
-     software developer, dickson'
+     'nashville,tennessee,software,development,developer,website,custom,blog,web,dickson,elixir,phoenix,javascript,ruby,rails'
 permalink: "/writing/:title"
 responsive_image:
   template: _includes/responsive_image.html
