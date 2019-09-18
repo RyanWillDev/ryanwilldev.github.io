@@ -88,3 +88,34 @@ code.highlighter-rouge {
 .language-shell code {
   color: $silver;
 }
+
+blockquote {
+  //background: lighten($silver, 15%);
+  background: $silver;
+  border-left: 10px solid $blue;
+  color: $black;
+  margin: 1.5em 0;
+  padding: 0.5em 10px;
+  quotes: '\201C''\201D''\2018''\2019';
+}
+
+blockquote:before {
+  color: $blue;
+  content: open-quote;
+  display: inline-block;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 8px;
+  margin-top: 24px;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+hr {
+
+  border-top: 3px solid $blue;
+  margin: 32px 0 24px;
+}
