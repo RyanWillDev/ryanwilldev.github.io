@@ -15,15 +15,12 @@
             <h2 class="date">{{ page.date | date: "%B %d, %Y" }}</h2>
             <a href="/">See all posts</a>
           </div>
-          {% if page.series %} 
-            {% if page.series_subtitle %}
-              <h2 class="series-subtitle">{{ page.series_subtitle }}</h2>
-            {% endif %}
-            {% include series_list.html %} 
-          {% endif %}
+          {% if page.series %} {% if page.series.subtitle %}
+          <h2 class="series-subtitle">{{ page.series.subtitle }}</h2>
+          {% endif %} {% include series_list.html %} {% endif %}
         </div>
         <section class="post-body">
-          {{content}}
+          {{content}} {% include footnotes.html %}
         </section>
         <nav class="post-footer">
           {% include social_links.html %}

@@ -1,7 +1,7 @@
 <!-- prettier-ignore -->
 {% assign count = 0 %}
 {% for post in site.posts reversed %}
-  {% if post.series == page.series %}
+  {% if post.series.title == page.series.title %}
     {% assign count = count | plus: 1 %}
   {% endif %}
 {% endfor %}
@@ -9,11 +9,11 @@
 {% if count > 0 %}
   <div class="series-list">
     <p>
-      Part of the "{{ page.series | titleize }}" series
+      Part of the "{{ page.series.title | titleize }}" series
     </p>
     <ul>
       {% for post in site.posts reversed %} 
-        {% if post.series == page.series %} 
+        {% if post.series.title == page.series.title %} 
         <li>
           {% if page.url == post.url %} 
             <a class="post-link active" href="{{page.url}}"></a>
