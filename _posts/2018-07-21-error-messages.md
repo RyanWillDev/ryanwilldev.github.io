@@ -1,6 +1,5 @@
 ---
 title: "Interpret the Errors"
-path: "/writing/interpret-the-errors"
 description: "The first emotion to seeing an error message or stack trace is usually intimidation.
 Instead, be curious to find out exactly what the computer is trying to tell you."
 tags: development 

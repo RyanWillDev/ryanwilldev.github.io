@@ -1,6 +1,5 @@
 ---
 title: 'React Calendario'
-path: '/writing/react-calendario'
 description: 'Developing a flexible and highly customizable React component that provides the base calendar functionality for creating internationalized calendars or date pickers.'
 tags: react javascript
 keywords:

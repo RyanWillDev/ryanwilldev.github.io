@@ -1,6 +1,5 @@
 ---
 title: 'Putting Service workers to work'
-path: '/writing/working-with-service-workers'
 description: 'An introduction to Service workers. What they are how they work, and what they can do for you.'
 tags: pwa progressive-web-app service-workers
 keywords: ['service', 'worker']

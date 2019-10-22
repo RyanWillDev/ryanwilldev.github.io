@@ -1,6 +1,5 @@
 ---
 title: 'Web Manifest'
-path: '/writing/pwa-manifest'
 description: 'The web manifest file is the first step on the road to a building a Progressive Web App.'
 tags: pwa progressive-web-app
 keywords: ['manifest', 'json']

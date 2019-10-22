@@ -1,6 +1,5 @@
 ---
 title: 'Nuxt Rewrite'
-path: '/writing/nuxt-rewrite'
 description: 'A quick write up on how I converted this site from a single page Vue site to a static site with Nuxt.'
 tags: vue nuxt
 keywords: []

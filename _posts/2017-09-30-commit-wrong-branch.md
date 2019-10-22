@@ -1,6 +1,5 @@
 ---
 title: 'Help! I committed to the wrong branch.'
-path: '/writing/commit-wrong-branch'
 description: "Everyone's made their commits to the wrong branch at least once. Here is a simple fix."
 tags: git cli
 keywords: ['wrong branch', 'undo git commit', 'commit']

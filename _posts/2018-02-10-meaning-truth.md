@@ -1,6 +1,5 @@
 ---
 title: 'The Meaning of Truth'
-path: '/writing/js-truthy-falsy'
 description: 'How to use the idea of truthy and falsy to write simpler code.'
 tags: javascript
 keywords: ['truth', 'falsy']

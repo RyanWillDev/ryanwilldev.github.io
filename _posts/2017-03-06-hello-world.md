@@ -1,6 +1,5 @@
 ---
 title: 'Hello World'
-path: '/writing/hello-world'
 description: 'The first entry in my journal gives a brief rundown of the technologies used to build this site.'
 tags: vue showdownjs highlightjs node javascript
 keywords: ['blog', 'create']
