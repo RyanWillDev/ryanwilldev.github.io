@@ -1,6 +1,7 @@
 body {
-  background-color: #f7f7f7;
-  color: $black;
+  //background-color: #f7f7f7;
+  background-color: $black;
+  color: $silver;
   font-family: 'Roboto', sans-serif;
   font-feature-settings: 'kern', 'liga', 'clig', 'calt';
   -moz-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
@@ -120,7 +121,6 @@ blockquote p {
 }
 
 hr {
-
   border-top: 3px solid $blue;
   margin: 32px 0 24px;
 }
