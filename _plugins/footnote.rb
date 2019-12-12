@@ -11,8 +11,9 @@ module Jekyll
       [
         '<sup>',
         '<a href="#fn:',
-        @text, '">',
-        @text,
+        @text.strip,
+        '">',
+        @text.strip,
         '</a>',
         '</sup>'
       ].join

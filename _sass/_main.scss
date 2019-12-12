@@ -91,10 +91,8 @@ code.highlighter-rouge {
 }
 
 blockquote {
-  //background: lighten($silver, 15%);
-  background: $silver;
   border-left: 10px solid $blue;
-  color: $black;
+  color: $silver;
   margin: 1.5em 0;
   padding: 0.5em 10px;
   quotes: '\201C''\201D''\2018''\2019';
