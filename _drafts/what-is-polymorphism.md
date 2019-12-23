@@ -26,10 +26,9 @@ Wow! Not the clearest definition. Let's see if we can do better.
 > Polymorphism is a way to work with different types of things as if they were the same 
 > by defining a common way to interact with them.
 
-Imagine a real world example. 
-If you're anything like me you have 43 gadgets in your living room. 
-Each with its own remote.
-Even though each of these remotes control a different type of gadget–TV, Stereo, VCR!?–they all share a common interface.
+Imagine a real-world example. 
+If you're anything like me, you have 43 remotes to control all the gadgets in your living room.
+While each of these remotes controls a different type of thing---TV, Stereo, VCR!?---they all share a common interface.
 This means they can be used in the same way even if they produce different results.
 Given a random remote, I know pressing the power button will turn on the device the remote belongs to.
 
