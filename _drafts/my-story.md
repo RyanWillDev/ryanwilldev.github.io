@@ -1,9 +1,8 @@
----
+
 title: "My Coding Journey"
 path: "/writing/my-coding-journey"
 description: ""
 tags: []
-publicationDate: ""
 published: false
 keywords: []
 ---
