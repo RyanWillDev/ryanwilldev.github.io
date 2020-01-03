@@ -61,12 +61,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler
   jekyll
   jekyll-tagging
   kramdown
   rouge
   ruby
-
-BUNDLED WITH
-   2.0.2
