@@ -66,6 +66,21 @@ h4 {
   font-weight: 700;
 }
 
+h1 {
+  font-size: 32px;
+  @include breakpoint($small) {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  font-size: 24px;
+
+  @include breakpoint($small) {
+    font-size: 32px;
+  }
+}
+
 .highlighter-rouge {
   margin: 24px 0;
 }
