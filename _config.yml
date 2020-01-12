@@ -11,6 +11,7 @@ defaults:
       layout: "post"
 
 highlighter: rouge
+include: _redirects
 kramdown:
   input: GFM
 markdown: kramdown
