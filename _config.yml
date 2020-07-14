@@ -1,3 +1,4 @@
+author: Ryan Will
 defaults:
   -
     scope:
@@ -10,6 +11,8 @@ defaults:
     values:
       layout: "post"
 
+feed:
+  excerpt_only: true
 highlighter: rouge
 kramdown:
   input: GFM
@@ -22,8 +25,8 @@ metadata:
   keywords:
      'nashville,tennessee,software,development,developer,website,custom,blog,web,dickson,elixir,phoenix,javascript,ruby,rails'
 permalink: "/writing/:title"
-responsive_image:
-  template: _includes/responsive_image.html
+plugins:
+  - jekyll-feed
 sass:
   sass_dir: _sass
   style: compressed

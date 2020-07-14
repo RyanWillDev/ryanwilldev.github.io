@@ -11,42 +11,37 @@ header {
 
   .nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 8px 16px;
+    max-width: 1040px;
+    margin: 0 auto;
     width: 100%;
 
+    @include breakpoint($small) {
+      flex-wrap: nowrap;
+    }
+
     &__logo {
+      margin-right: 16px;
       a {
         display: block;
         height: 60px;
         width: 100px;
       }
     }
-
-    &__menu {
-      align-content: center;
-      display: flex;
-
-      button {
-        background-color: $black;
-        padding: 8px;
-      }
-    }
   }
 
   .nav-links {
+    align-items: center;
     background-color: $black;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    position: absolute;
-    top: 0px;
-    transition: top 300ms ease-in-out;
+    padding-bottom: 16px;
     width: 100%;
-    z-index: -1;
 
     @include breakpoint($small) {
-      padding: 12px;
+      padding-bottom: 0;
     }
 
     svg {
@@ -66,38 +61,28 @@ header {
 
     .nav-links__pages {
       display: flex;
-      justify-content: space-around;
-      visibility: hidden;
+      margin-bottom: 16px;
       width: 100%;
+      li {
+        margin-right: 16px;
+      }
 
       @include breakpoint($small) {
-        justify-content: space-between;
-        max-width: 500px;
-        width: 60%;
+        margin: 0 16px 0;
+        width: initial;
       }
     }
 
     .social-links {
-      justify-content: space-around;
-      visibility: hidden;
-      width: 100%;
+      display: flex;
+      width: 150px;
+      .icon-container {
+        height: 30px;
+        width: 30px;
+      }
 
       @include breakpoint($small) {
-        max-width: 300px;
-        width: 35%;
-      }
-    }
-
-    &.open {
-      top: 65px;
-
-      ul {
-        margin: 16px 0;
-        visibility: visible;
-
-        @include breakpoint($small) {
-          margin: 0;
-        }
+        width: 150px;
       }
     }
   }

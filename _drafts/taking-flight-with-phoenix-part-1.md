@@ -48,6 +48,10 @@ We're now ready to install Phoenix with the command
 mix archive.install hex phx_new 1.4.8
 ```
 
+```elixir
+SomeModule.function_call(1)
+```
+
 Finally, we need to make sure we have PostgreSQL installed. 
 The easiest way to install PostgreSQL for macOS is to use the [Postgres.app](https://postgresapp.com/downloads.html).
 To install PostgreSQL on another platform follow the instructions [here](https://www.postgresql.org/download/).
