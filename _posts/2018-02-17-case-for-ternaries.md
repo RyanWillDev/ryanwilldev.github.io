@@ -84,7 +84,9 @@ A variable could be set using if/else statements and then passed to the function
 A cleaner, more concise, and easier to follow method would be to use a ternary to pass the argument.
 
 ```javascript
-someFunctionCall(someCondition ? 4 : 42);
+someFunctionCall(
+  someCondition ? 4 : 42
+);
 ```
 
 ## Returning expressions from functions
@@ -96,7 +98,9 @@ What is the potential error in the following example?
 
 ```javascript
 function capitalize(string) {
-  if (string.length) return string[0].toUpperCase() + string.slice(1);
+  if (string.length) {
+    return string[0].toUpperCase() + string.slice(1);
+  }
 }
 ```
 
@@ -115,7 +119,9 @@ Therefore, when writing a ternary, the developer is forced to deal with the else
 
 ```javascript
 function capitalize(string) {
-  return string.length ? string[0].toUpperCase() + string.slice(1) : string;
+  return string.length
+    ? string[0].toUpperCase() + string.slice(1)
+    : string;
 }
 ```
 
