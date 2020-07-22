@@ -10,6 +10,7 @@ defaults:
       path: "_drafts"
     values:
       layout: "post"
+description: 'Cultivating ideas and software with varying degrees of success'
 highlighter: rouge
 include:
   - _redirects
@@ -18,9 +19,7 @@ kramdown:
 markdown: kramdown
 metadata:
   title: 'Software Developer'
-  description:
-     'Software Developer in the Nashville area with a passion for learning, teaching,
-     and creating custom software solutions.'
+  description: 'Cultivating ideas and software with varying degrees of success'
   keywords:
      'nashville,tennessee,software,development,developer,website,custom,blog,web,dickson,elixir,phoenix,javascript,ruby,rails'
 permalink: "/writing/:title"
@@ -31,3 +30,4 @@ sass:
   style: compressed
 tag_page_layout: tag_page
 tag_page_dir: tag
+url: 'https://www.ryanwill.dev'
