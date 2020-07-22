@@ -10,9 +10,6 @@ defaults:
       path: "_drafts"
     values:
       layout: "post"
-
-feed:
-  excerpt_only: true
 highlighter: rouge
 include: _redirects
 kramdown:
