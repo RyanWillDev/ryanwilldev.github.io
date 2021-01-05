@@ -23,8 +23,6 @@ metadata:
   keywords:
      'nashville,tennessee,software,development,developer,website,custom,blog,web,dickson,elixir,phoenix,javascript,ruby,rails'
 permalink: "/writing/:title"
-plugins:
-  - jekyll-feed
 sass:
   sass_dir: _sass
   style: compressed
