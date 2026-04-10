@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    {% include metahead.html %}
-  </head>
-  <body>
-    {% include header.html %}
+<html lang="{{ page.lang | default: "en" }}">
+  {%- include head.html -%}
+  <body a="{{ site.theme_config.appearance | default: "auto" }}">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        {{ content }}
+      </div>
+    </main>
 
-    <section class="content">
-      <!-- prettier-ignore -->
-      {% if page.heading %} {% include page_heading.html
-      heading=page.page_heading callout=page.page_heading_callout %} {% endif %}
-      {{ content }}
-    </section>
+    {% if page.custom_js %}
+      {% for js_file in page.custom_js %}
+        <script type="text/javascript" src="{{ site.baseurl }}/assets/js/{{ js_file }}.js"></script>
+      {% endfor %}
+    {% endif %}
   </body>
 </html>

@@ -1,0 +1,20 @@
+entries:
+  - title: about
+    url: about
+
+  - title: all posts
+    post_list:
+      limit: 5
+      show_more: true
+      show_more_text: see all posts...
+      show_more_url: archive.html
+
+  - title: tags
+    url: tags
+
+  - title: projects
+    entries:
+      - title: "<a href='https://www.who-reps.me'>whorepsme</a> - find your representatives and their voting history"
+
+  - title: rss
+    url: feed.xml

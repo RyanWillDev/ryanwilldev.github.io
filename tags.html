@@ -1,0 +1,23 @@
+---
+layout: page
+title: Tags
+---
+
+{%- assign tags = site.tags | sort -%}
+{%- for tag in tags -%}
+  <h2 id="{{ tag[0] }}">{{ tag[0] }}</h2>
+  <ul>
+    {%- for post in tag[1] -%}
+      <li>
+        <span>{{ post.date | date: site.theme_config.date_format }}</span>
+        <a href="{{ post.url | relative_url }}">
+          {%- if site.theme_config.lowercase_titles -%}
+            {{ post.title | downcase }}
+          {%- else -%}
+            {{ post.title }}
+          {%- endif -%}
+        </a>
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- endfor -%}
