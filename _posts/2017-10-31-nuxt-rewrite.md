@@ -3,6 +3,7 @@ title: 'Nuxt Rewrite'
 description: 'A quick write up on how I converted this site from a single page Vue site to a static site with Nuxt.'
 tags: vue nuxt
 keywords: []
+redirect_from: /writing/nuxt-rewrite
 ---
 
 Recently I converted this site from a single page Vue app to a static site generated with Nuxt.

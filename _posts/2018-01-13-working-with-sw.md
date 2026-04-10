@@ -3,6 +3,7 @@ title: 'Putting Service workers to work'
 description: 'An introduction to Service workers. What they are how they work, and what they can do for you.'
 tags: pwa progressive-web-app service-workers
 keywords: ['service', 'worker']
+redirect_from: /writing/working-with-sw
 ---
 
 Service workers are event driven JavaScript files that can be registered as background tasks with the browser.

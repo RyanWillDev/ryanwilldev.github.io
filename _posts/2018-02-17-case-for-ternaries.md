@@ -1,9 +1,10 @@
 ---
 title: 'The case for ternaries'
-url: '/writing/case-for-ternaries'
+url: '/rants/case-for-ternaries'
 description: 'The conditional ternary operator can be a little off putting to some, but it is extremely useful. So, what is it and when should it be used?'
 tags: javascript
 keywords: ['ternary', 'what', 'is']
+redirect_from: /writing/case-for-ternaries
 ---
 
 ```javascript

@@ -3,6 +3,7 @@ title: 'Help! I committed to the wrong branch.'
 description: "Everyone's made their commits to the wrong branch at least once. Here is a simple fix."
 tags: git cli
 keywords: ['wrong branch', 'undo git commit', 'commit']
+redirect_from: /writing/commit-wrong-branch
 ---
 
 At [Metova](https://metova.com) we use git flow when making changes to our codebase.

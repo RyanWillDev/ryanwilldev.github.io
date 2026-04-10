@@ -5,4 +5,10 @@ page_heading: Not Found
 heading: true
 ---
 
+<script>
+  if (window.location.pathname.startsWith("/writing/")) {
+    window.location.replace(window.location.pathname.replace("/writing/", "/rants/"));
+  }
+</script>
+
 <h2>Looks like your lost. Let's head back <a href="/">home.</a></h2>

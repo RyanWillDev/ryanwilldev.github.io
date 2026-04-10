@@ -2,8 +2,9 @@
 title: "Interpret the Errors"
 description: "The first emotion to seeing an error message or stack trace is usually intimidation.
 Instead, be curious to find out exactly what the computer is trying to tell you."
-tags: development 
+tags: development
 keywords: ['advice', 'beginner']
+redirect_from: /writing/error-messages
 ---
 
 <div class="image-container">

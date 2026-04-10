@@ -2,6 +2,7 @@
 title: 'React Calendario'
 description: 'Developing a flexible and highly customizable React component that provides the base calendar functionality for creating internationalized calendars or date pickers.'
 tags: react javascript
+redirect_from: /writing/react-calendario
 keywords:
   [
     'npm',

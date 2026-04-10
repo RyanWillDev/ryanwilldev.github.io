@@ -1,6 +1,6 @@
 
 title: "My Coding Journey"
-path: "/writing/my-coding-journey"
+path: "/rants/my-coding-journey"
 description: ""
 tags: []
 published: false

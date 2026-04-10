@@ -3,6 +3,7 @@ title: 'Hello World'
 description: 'The first entry in my journal gives a brief rundown of the technologies used to build this site.'
 tags: vue showdownjs highlightjs node javascript
 keywords: ['blog', 'create']
+redirect_from: /writing/hello-world
 ---
 
 Like most developers' personal sites, this has been my playground and has gone through many rewrites.

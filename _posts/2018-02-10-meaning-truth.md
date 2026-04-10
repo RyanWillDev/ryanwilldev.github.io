@@ -3,6 +3,7 @@ title: 'The Meaning of Truth'
 description: 'How to use the idea of truthy and falsy to write simpler code.'
 tags: javascript
 keywords: ['truth', 'falsy']
+redirect_from: /writing/meaning-truth
 ---
 
 JavaScript not only has the boolean types `true` and `false`, but it also has the idea of truthy and falsy values.

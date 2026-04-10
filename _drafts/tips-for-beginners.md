@@ -1,6 +1,6 @@
 ---
 title: "Tips for beginners"
-path: "/writing/tips-for-beginners"
+path: "/rants/tips-for-beginners"
 description: " blah blah"
 tags: personal experience tips
 keywords: advice programming

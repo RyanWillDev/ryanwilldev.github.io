@@ -4,7 +4,7 @@ email: ryanwilldev@gmail.com
 url: 'https://www.ryanwill.dev'
 description: 'Cultivating ideas and software with varying degrees of success'
 
-permalink: "/writing/:title"
+permalink: "/rants/:title"
 
 favicon: "favicon.ico"
 
@@ -39,22 +39,8 @@ sass:
   silence_deprecations:
     - import
 
-include:
-  - _redirects
-
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
   - jekyll-seo-tag
 
-# TODO: uncomment and pick /rants or /rant when ready
-# Once permalink changes to the new path, these redirects
-# will send old /writing/* URLs to the new location.
-# To set up: change permalink above, then add redirect_from
-# in each post's front matter, or use defaults like:
-# defaults:
-#   -
-#     scope:
-#       path: "_posts"
-#     values:
-#       redirect_from: "/writing/:title"

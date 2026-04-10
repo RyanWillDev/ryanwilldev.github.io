@@ -1,6 +1,6 @@
 ---
 title: "Program like a scientist"
-path: "/writing/program-like-scientist"
+path: "/rants/program-like-scientist"
 description: "The scientific method has helped advance human civilization for the past few centuries. Applying the same technique to your programs can help you learn and solve problems more effectively."
 tags: personal experience beginner tip
 keywords: advice programming
